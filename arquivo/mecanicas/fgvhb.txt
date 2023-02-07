@@ -1,0 +1,5 @@
+altura² + peso ² = vida max²
+
+1.redução de dano em %
+2.redução de dano flat
+3. os 2

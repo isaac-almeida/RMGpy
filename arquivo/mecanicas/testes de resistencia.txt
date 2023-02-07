@@ -1,0 +1,5 @@
+testes de resistência:
+d20 + atributo + proficiencia-5+nivel (caso se aplique)
+
+resistências a dano:
+você tem uma resistência a dano igual a 5 vezes seu modificador de força. 

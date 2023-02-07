@@ -1,0 +1,217 @@
+{
+    "ra\u00e7as": {
+        "humano": {
+            "nome": "humano",
+            "tipo": "humanoide",
+            "stats_medios": {
+                "altura": 165,
+                "peso": 62,
+                "vida": "91.67",
+                "vida_partes": {
+                    "cabe\u00e7a": "8.33",
+                    "bra\u00e7os": "25.00",
+                    "torso": "29.17",
+                    "pernas": "29.17"
+                }
+            },
+            "resistencia": 0,
+            "bonus_escudo_magico": 0
+        },
+        "goblin": {
+            "nome": "goblin",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 90,
+                "peso": 21,
+                "vida": "55.00",
+                "vida_partes": {}
+            }
+        },
+        "gnomo": {
+            "nome": "gnomo",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 105,
+                "peso": 20,
+                "vida": "59.58",
+                "vida_partes": {}
+            }
+        },
+        "an\u00e3o": {
+            "nome": "an\u00e3o",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 135,
+                "peso": 70,
+                "vida": "82.50",
+                "vida_partes": {}
+            }
+        },
+        "halfling": {
+            "nome": "halfling",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 90,
+                "peso": 20,
+                "vida": "50.42",
+                "vida_partes": {}
+            }
+        },
+        "elfo": {
+            "nome": "elfo",
+            "resistencia": 0,
+            "bonus_escudo_magico": 10,
+            "stats_medios": {
+                "altura": 170,
+                "peso": 55,
+                "vida": "87.08",
+                "vida_partes": {
+                    "cabe\u00e7a": "7.92",
+                    "bra\u00e7os": "23.75",
+                    "torso": "27.71",
+                    "pernas": "27.71"
+                }
+            }
+        },
+        "aarakocra": {
+            "nome": "aarakocra",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 150,
+                "peso": 40,
+                "vida": "68.75",
+                "vida_partes": {}
+            }
+        },
+        "kenku": {
+            "nome": "kenku",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 150,
+                "peso": 48,
+                "vida": "73.33",
+                "vida_partes": {}
+            }
+        },
+        "fada": {
+            "nome": "fada",
+            "resistencia": 0,
+            "bonus_escudo_magico": 50,
+            "stats_medios": {
+                "altura": 105,
+                "peso": 16,
+                "vida": "27.50",
+                "vida_partes": {}
+            }
+        },
+        "firbolg": {
+            "nome": "firbolg",
+            "resistencia": 10,
+            "bonus_escudo_magico": 10,
+            "stats_medios": {
+                "altura": 225,
+                "peso": 125,
+                "vida": "183.33",
+                "vida_partes": {
+                    "cabe\u00e7a": "16.67",
+                    "bra\u00e7os": "50.00",
+                    "torso": "58.33",
+                    "pernas": "58.33"
+                }
+            }
+        },
+        "locathah": {
+            "nome": "locathah",
+            "resistencia": 25,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 150,
+                "peso": 80,
+                "vida": "100.83",
+                "vida_partes": {}
+            }
+        },
+        "owlin": {
+            "nome": "owlin",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 210,
+                "peso": 70,
+                "vida": "123.75",
+                "vida_partes": {}
+            }
+        },
+        "tortle": {
+            "nome": "tortle",
+            "resistencia": 50,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 165,
+                "peso": 200,
+                "vida": "91.67",
+                "vida_partes": {}
+            }
+        },
+        "trit\u00e3o": {
+            "nome": "trit\u00e3o",
+            "resistencia": 0,
+            "bonus_escudo_magico": 30,
+            "stats_medios": {
+                "altura": 150,
+                "peso": 45,
+                "vida": "73.33",
+                "vida_partes": {
+                    "cabe\u00e7a": "6.67",
+                    "bra\u00e7os": "20.00",
+                    "torso": "23.33",
+                    "pernas": "23.33"
+                }
+            }
+        },
+        "centauro": {
+            "nome": "centauro",
+            "resistencia": 0,
+            "bonus_escudo_magico": 0,
+            "stats_medios": {
+                "altura": 190,
+                "peso": 500,
+                "vida": "229.17",
+                "vida_partes": {}
+            }
+        },
+        "damwan": {
+            "nome": "damwan",
+            "stats_medios": {
+                "vida_partes": {
+                    "cabe\u00e7a": 62.72727272727273,
+                    "bra\u00e7os": 188.1818181818182,
+                    "torso": 219.54545454545453,
+                    "pernas": 219.54545454545453
+                }
+            },
+            "resistencia": 3,
+            "bonus_escudo_magico": 4,
+            "tipo": "humanoide"
+        }
+    },
+    "templates": {
+        "humanoide": {
+            "cabe\u00e7a": 2,
+            "bra\u00e7os": 6,
+            "torso": 7,
+            "pernas": 7,
+            "total": 22
+        },
+        "passaroide": {
+            "asa": 10,
+            "corpo": 20
+        }
+    }
+}

@@ -1,0 +1,10 @@
+humano
+elfo
+tritão
+firbolg
+
+cabeca = 2
+bracos = 6
+torso = 7
+pernas = 7
+total = 22 

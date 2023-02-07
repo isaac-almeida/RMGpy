@@ -1,0 +1,189 @@
+0°nível
+
+Acid Splash
+
+Agora só pode ter uma criatura como alvo. Causa 1d6 de dano na criatura, além de 1 de dano no alvo e em criaturas a 1.5m do alvo.
+
+Infestation
+
+A spell agora tem duração de 12UTs. Pode se concentrar na spell, optando fazer com que os insetos sigam o uma criatura que passar pelo espaço, causando 1 de dano poison por UT, caso o alvo falhe num CON Save. A velocidade máxima dos insetos é 2km/h.
+
+Magic Stone
+
+A spell agora te ajuda a acertar as pedras no alvo, te dando um bônus de +5 para acertar as pedras. O dano também é considerado como mágico.
+
+Primal Savagery
+
+Buffa seus ataques desarmados feitos com as mãos por 1 minuto com 1d4 de dano ácido.
+
+Thorn Whip
+
+Criaturas largas só são puxadas 1.5m.
+
+True Strike
+
+Agora tem tempo de casting de uma ação bônus. O alvo faz um teste de resistência de carisma. Se falhar, a spell toma efeito.
+
+1° nível
+
+Absorb Elements
+
+Absorve metade dano elemental recebido nas últimas 12UTs. No fim da duração, faz um ataque de spell a uma criatura a 9m de você, soltando todo o dano que foi absorvido.
+
+Armor of Agathys
+
+O dano causado agora é igual ao tanto de hit points que faltam pra spell ser consumida.
+
+Color Spray
+
+Agora criaturas no cone olhando pra você simplesmente rolam um DEX Save. Se falharem, rolam um CON Save. Falhando os dois, estão cegas pelo saldo do CON Save * 4UTs.
+
+Command
+
+Approach, Flee, e Halt tem duração de 6UTs.
+
+Dissonant Whispers
+
+A criatura interrompe a ação que está fazendo e se move pra longe de você por 4UTs.
+
+Ensnaring Strike
+
+Para cada tamanho maior que o normal, a criatura tem 1 vantagem no Save. E para cada tamanho que for menor que o normal, tem uma desvantagem.
+
+Entangle
+
+Se mover 1.5m dentro da área afetada causa 1 de dano. A área pode ser limpa com alguma arma cortante: cada 1.5m de área tem 10 de HP e 1 de RD física.
+
+Catapult
+
+???????
+
+Fog Cloud
+
+Se move a uma velocidade igual a 1/10 da velocidade do vento.
+
+Gift of Alacrity
+
+Agora fornece vantagem na rolagem de iniciativa, mas o efeito só pode ser usado uma vez dentro da duração da spell.
+
+Goodberry
+
+Mais de uma fruta pode ser comida na mesma ação.
+
+Grease
+
+Agora o teste de destreza é pedido sempre que uma criatura se move dentro da área, e a CD tem um modificador baseado na velocidade da criatura. Se uma criatura cai, ela se suja de graxa, tirando a graxa daquele local (cumulativo), mas sofrendo 1 de dano por UT por 5UTs caso sofra dano de fogo, até usar uma ação padrão para apagar o fogo. Se fogo atingir a área, a área fica em chamas por 20UTs, causando 2 de dano de fogo por UT por quadrado em contato, consumindo a graxa ao longo do tempo. Modificador: V^(3/2)
+
+Hail of Thorns
+
+Dano reduzido para 1d4, porém o efeito permanece na arma pela duração da spell.
+
+Hellish Rebuke
+
+Você fica com uma aparência infernal/flamejante pela duração de 12 UTs. Durante esse tempo, criaturas que te causarem dano ou efeitos negativos devem fazer um Dex Save ou sofrerem 1d10 de dano de fogo, se sucederem no teste não levam dano.
+
+Jim's Magic Missile
+
+Dano alterado para 1d10. 20 ou 1 no dado não tem efeito.
+
+Mage Armor
+
+A criatura recebe 3 de RD física e mágica pela duração. Não acumula com outras armaduras. Cobre o corpo todo.
+
+Magnify Gravity
+
+Criaturas na área fazem um STR Save. Falhando, tem sua velocidade alterada por um modificador. Se a velocidade de alguém se tornaria negativa por esse efeito, para cada ponto do teste além do ponto em que a velocidade da criatura seria zero, ela leva 0.5 de dano de força por UT. Modificador: -(*dado**magia*- *STR**SAVE*)/3
+
+Shield
+
+Uma esfera mágica de diâmetro de 1.5m aparece ao seu redor, por 2UTs. A barreira tem 10 de HP e 5 de RD, físico e mágico, porém tem vulnerabilidade a dano de força. Danos de trovão e psiquicos ignoram a barreira (atravessam ela, mas não causam dano a ela).
+
+Shield of Faith
+
+Se a criatura for alvo de um ataque, o ataque tem modificador de -2. 
+
+Silvery Barbs
+
+Tem duração de 1 minuto agora. Pega o saldo do último teste feito pela criatura alvo, no momento em que a spell começou a ser castada, e guarda. No próximo minuto, pode escolher uma rolagem de uma criatura e aplicar esse saldo, porém negativo. Não pode ter aliados como alvos.
+
+Sleep
+
+Área reduzida a círculo de raio 1.5m. Criaturas fazem um teste de constituição, se falharem, dormem pela diferença dos testes * 2UTs. Se estiverem de pé, lentamente deitam, sem se machucar ao cair.
+
+Snare
+
+Uma criatura que ativou a armadilha faz o teste com uma vantagem para cada tamanho que ela tem que for maior ou menor que o normal.
+
+Tasha's Caustic Brew
+
+Criaturas afetadas sofrem 1 de dano ácido por UT.
+
+Thunderous Smite
+
+Não é mais concentração. O ataque perde seu efeito de empurrar e derrubar. Agora, considere o dano como empurrada*2
+
+Thunderwave
+
+Considere o dano como empurrada*2
+
+Unseen Servant
+
+Tem RD 1. Tem uma ficha dele, e tem iniciativa 10 quando invocado. Sua velocidade é igual a 4.5m. Todos atributos são 2, menos sua inteligencia e carisma, que são 4 e 0, respectivamente. Ele pode atacar agora, mas lembre-se de ver quanto peso ele pode
+
+Witch Bolt
+
+Faz um ataque a uma criatura. Caso acerte, deixa um fragmento de raio no alvo, o qual faz um STR Save, sofrendo 1d8 de dano caso falhe. O fragmento causa 0.5 de dano por UT ao alvo, se ele falhar num STR Save, e enquanto o fragmento não for removido, você pode usar uma ação bônus para causar 1d4 de dano ao caso ele nã o passe num STR Save. Se passar mais de 6UTs sem usar essa ação bônus, a spell acaba. Todo dano causado por essa spell é de raio. Um fragmento de raio pode ser removido com uma ação.
+
+Wrathful Smite
+
+Não é mais concentração.
+
+Zephyr Strike
+
+Sua velocidade é multiplicada por 1.2 pela duração, e sua velocidade vertical é dobrada. Enquanto a spell dura, pode fazer um ataque que, para cálculos de dano, sua velocidade é considerada 3 m/s, ou o dobro dela (o que for maior). Após fazer isso, a spell acaba.
+
+2° nível
+
+Barkskin
+
+A RD física e mágica da criatura alvo se torna 10 pela duração, se já não for maior que isso.
+
+Branding Smite
+
+A spell não é mais de concentração.
+
+Cloud of Daggers
+
+Causa 2 de dano cortante para cada UT que uma criatura permanece ali.
+
+Cordon of Arrows
+
+Faz ataques agora, utilizando o seu atributo de spellcasting para atacar, mas ainda causa dano perfurante. E se uma criatura passa 10UTs na área, gatilha um ataque.
+
+Crown of Madness
+
+A criatura alvo fica sob seu controle pela duração. Porém, ela só pode fazer ações que causam mal direto e imediato a alguma criatura. A cada 6UTs faz um WIS Save para tentar se libertar.
+
+Dragon's Breath
+
+O sopro é feito durante a segunda metade do casting dessa spell.
+
+Dust Devil
+
+É uma criatura, é invocada com 10 de iniciativa. Tem 1 de HP, porém imunidade a todo tipo de dano, menos dano de força. Ele não se move, a não ser que você use uma ação bônus para fazê-lo magicamente desaparecer de onde está e reaparecer em qualquer lugar a até 9 metros de onde estava. Tem apenas uma ação: 1 ataque padrão, 1.5m de range, seu modificador de ataque, 1d8+MOD spellcasting de dano. O ataque tem empurrada*3.
+
+Earthbind
+
+A rolagem para essa spell tem um bônus de +5. Para cada 1 que você supera o teste de resistência do alvo, a velocidade de voo dele é reduzida em 10%, sendo que acima de 50% a criatura não consegue mais voar horizontalmente, e pode apenas usar seu deslocamento de voo para aterrissar com segurança. Se supera o teste por 10 ou mais, a criatura cai abruptamente, e o dano de queda que ela recebe tem 10% de aumento para cada ponto que ultrapassa 10. Essa spell também pode ser usada para restringir os braços de uma criatura, simulando uma corda sendo amarrada à criatura, a qual a CD do nó é igual ao seu teste -5.
+
+Enhance Ability
+
+O efeito pra todos atributos se torna: vantagem em testes e saves com o atributo, além de aumentar o valor total do seu atributo escolhido em 5.
+
+Enlarge/Reduce
+
+O tamanho da criatura alvo é reduzido pela metade, ou duplica. Se a criatura tem seu tamanho reduzido pela metade, suas ações físicas tem metade do efeito (metade do dano em golpes, metade do deslocamento), mas a velocidade com que ela faz essas ações é dobrada. A sua força é cortada pela metade e sua destreza é dobrada. E o oposto ocorre caso você escolha duplicar o tamanho.
+
+Flaming Sphere
+
+Causa 1.5 de dano de fogo por UT a criaturas que não sucederem num CON Save. Com uma ação bônus você pode mover a esfera, ou fazer com que ela fique se movendo numa direção numa certa velocidade (velocidade máxima 9m/s). Caso a esfera esteja em contato direto com uma criatura ou um objeto, ela explode e se desfaz, causando 3d6 de dano de fogo caso falhe num CON Save.

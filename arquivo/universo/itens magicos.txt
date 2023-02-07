@@ -1,0 +1,11 @@
+Como visto em magia, apenas almas podem conter um núcleo que armazena partículas mágicas. Sendo assim, como um objeto pode ter atributos mágicos?
+
+A criação de um objeto mágico se trata apenas de inércia: uma magia é frequentemente castada nesse objeto, até que as partículas dele continuam nesse fluxo, apenas seguindo as outras nessa rotina. Mas como pode um objeto ter um núcleo com partículas, sendo que apenas almas têm este? Simples: uma manipulação é feita com uma alma para que ela se amarre a um objeto ao invés do cérebro que ela costumava se hospedar. Essa manipulação é mais fácil de se fazer caso o objeto alvo seja um objeto familiar a alma.
+
+Logo objetos mágicos são objetos com almas linkadas a eles.
+
+Um objeto mágico pode ter qualquer magia atribuída a ele se castada vezes o suficiente, porém o processo será mais fácil se a magia for alguma que a alma está acostumada a castar.
+
+Objetos mágicos soltam partículas mágicas naturalmente, dado um gatilho definido pelo seu criador, mas como eles armazenam novas partículas mágicas? Alguém deve se conectar ao item mágico, e compreender a taxa de respiração da alma atrelada a ele, e com essa informação, inserir suas próprias partículas mágicas no item, meio que fazendo uma respiração boca a boca.
+
+Items mágicos precisam de manutenção, tanto na inércia da magia que o item armazena, quanto na fixação da alma no item. Com o tempo a alma vai se soltando do item, então é necessário que alguém esteja 'apertando o nó' com frequência. Porém, se um item é muito querido por uma alma, ela mesma se amarra ao item.

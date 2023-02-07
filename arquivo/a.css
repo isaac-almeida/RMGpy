@@ -1,0 +1,313 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+/*formatações gerais-----------------------------------------------*/
+body {
+    background-image: url("https://wallpaperaccess.com/full/1611223.jpg");
+    color: rgba(0,0,0,1);
+}
+
+div#main{
+    position:relative;
+    width: 950px;
+    background-color: #D0AE88;
+    margin: 0 2% 0px 20%;
+    box-shadow:  0px 0px 10px #666666;
+    padding: 30px 12px 100% 12px;
+}
+
+p {
+	font-size: 13pt;
+    text-align: justify;
+    text-indent: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: -15px;
+}
+
+a{
+	color: black;
+	font-size: 14pt;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: all 0.5s;
+}
+/*-----------------------------------------------------------------*/
+/*formatação de cabeçalho------------*/
+header#cabecalho{
+    border-bottom: 4px #606060 solid;
+    height: 150px;
+}
+
+header#cabecalho h1{
+    font-family: 'Staatliches', cursive !important;
+    font-size: 100pt !important;
+    color: #404040 !important;
+    text-shadow: 5px 5px 5px rbga(0,0,0, 0.6) !important;
+    margin-top: -20px !important;
+	text-align: center !important;
+	vertical-align: center !important;
+}
+/*-----------------------------------*/
+/*formatação do índice --------------*/
+nav#lateral{
+	display: block;
+	position:  fixed;
+	width: 19%;
+	height: 85%;
+	background-color: #D0AE88;
+	box-shadow:  0px 0px 10px #666666;
+	border-radius: 20px;
+	margin: 4% 10px 4% -1.25%;
+	padding-right: -80%;
+	top: 0;
+}
+
+nav#lateral h1{
+	font-family: 'Staatliches', cursive;
+	font-weight: bolder;
+	font-size: 25pt;
+	display: block;
+	position: fixed;
+	margin-top: -4%;
+	margin-left: -5%;
+	text-shadow: 5px 5px 5px rbga(0,0,0, 0.6);
+	padding: 1% 0px 0px 8%;
+	margin-bottom: 0px;
+}
+
+nav#lateral  ul{
+    padding-left: 15%;
+
+}
+
+nav#lateral li{
+    padding: 2% 2% 2% 2%;
+    margin: 2px;
+}
+
+nav#lateral li.sub{
+	list-style-type: '·';
+}
+
+nav#lateral a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+nav#lateral a{
+	font-family: 'Amatic SC', cursive;
+	font-size: 16pt;
+	font-weight: bolder;
+}
+/*-----------------------------------*/
+/*formatações gerais do corpo----------------------------------*/
+/*formatação de títulos--------------*/
+h1 {
+	font-family: 'Odibee Sans', cursive;
+    font-size: 46pt;
+    color: #2e1c09;
+	text-shadow: 2px 2px 2px #84490b;
+	margin-bottom: -2px;
+	margin-top: 40px;
+}
+
+h2 {
+	font-family: 'Odibee Sans', cursive;
+    font-size: 32pt;
+    color: #202020;
+	margin-bottom: -2px;
+	margin-top: 40px;
+	border-bottom: 3px #573F23 solid;
+	border-radius: 5px;
+}
+
+h3 {
+	font-family: 'Odibee Sans', cursive;
+    font-size: 22pt;
+    color: #202020;
+	margin-bottom: -2px;
+	margin-top: 40px;
+}
+
+h4{
+	font-family: 'Caveat', cursive;
+	font-size: 20pt;
+	margin-bottom: -2px;
+	font-weight: lighter;
+}
+
+h5 {
+	font-family: 'Odibee Sans';
+    font-size: 14pt;
+    color: #202020;
+	margin-bottom: -2px;
+	font-weight: lighter;
+	font-style: italic;
+}
+/*-----------------------------------*/
+/*formatação de listas---------------*/
+ul{
+	margin-left:-10px;
+	margin-bottom: 10px;
+}
+
+li{
+	padding: 2px;
+}
+
+li.sub{
+	background-color: #bd9870;
+	margin-top: 14px;
+	list-style-type: '   ';
+	border-radius: 5px;
+}
+
+a:hover{
+	text-decoration: underline;
+	font-size: 17pt;
+	color:#55412b;
+}
+/*-----------------------------------*/
+/*formatação de tabelas--------------*/
+table{
+	border: 1px solid #573F23;
+	border-spacing: 0px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size: 14pt;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	box-shadow:  0px 0px 10px #664726;
+}
+
+td{
+	text-align: center;
+	padding: 7px;	
+}
+
+.primeira{
+	background-color: #c28e52;
+	font-weight: bolder;
+}
+
+tr{
+	background-color: #C8A175;
+}
+/*-----------------------------------*/
+/*formatação imagens*----------------*/
+img{
+	width: 100%;
+	height: auto;
+	max-height: 500px;
+}
+/*-----------------------------------*/
+/*formatação texto especial ---------*/
+i.formula{
+	font-size: 20pt;
+	display: block;
+	margin-top: 30px;
+	background-color: #bc7f3b;
+	box-shadow:  0px 0px 10px #664726;
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	border-radius: 3px;
+	line-height: 40px;
+}
+
+i.exemplo{
+	font-size: 15pt;
+	display: block;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+/*-----------------------------------*/
+/*-------------------------------------------------------------*/
+/*formatações específicas--------------------------------------*/
+/*formatação aventura------------------------------------*/
+
+#acoes{
+	float:right;
+	background-color: #bc7f3b;
+	padding:8px;
+	margin: 16px;
+	width: 280px;
+	margin-bottom: 30px;
+}
+#acoes table{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#con{
+	width:310px;
+	margin-left:140px;
+	margin-top: 20px;
+}
+#esqi{
+	margin:auto;
+	margin-top:30px;
+	width:700px;
+}
+#pen{
+	margin:auto;
+	margin-top:30px;
+	width:500px;
+}
+#dato{
+	margin:auto;
+	margin-top:30px;
+	width:420px;
+}
+#parry{
+	margin:auto;
+	margin-top:30px;
+	width:620px;
+}
+#chance-mira{
+	margin:auto;
+	margin-top:30px;
+	width:300px;
+}
+#system-shock-f{
+	margin:auto;
+	margin-top:30px;
+	width:430px;
+}
+#lim{
+	width: 588px;
+	margin-left: 100px;
+}
+#rd{
+	width: 214px;
+	margin-left: 100px;	
+}
+#rd-mag{
+	width: 550px;
+	margin-left: 100px;	
+}
+#spellcasting{
+	width: 900px;
+}
+#cort{
+	width: 800px;
+	font-size: 14pt;
+}
+#desest{
+	width: 550px;
+	font-size: 14pt;
+}
+#conc-folego{
+	width: 550px;
+	font-size: 14pt;
+}
+#conc-empurrada{
+	width: 600px;
+	font-size: 14pt;
+}
+/*-------------------------*/
+/*-----------------------------*/

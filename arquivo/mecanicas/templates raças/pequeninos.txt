@@ -1,0 +1,4 @@
+goblin
+gnomo
+anão
+halfling

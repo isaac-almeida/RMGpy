@@ -1,0 +1,2 @@
+esqueleto peso: 13.5%
+pele peso: 14%

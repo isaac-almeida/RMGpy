@@ -1,0 +1,41 @@
+testes sob pressão:
+>toda vez que estiver sob pressão e for fazer um teste, rodará um teste de constituição antes, para determinar o quão calmo seu personagem consegue se manter em situações de alto risco. O DM tem controle total de quando esse teste deve ou não ser feito.
+>o resultado do teste é dividido por 2. Esse número final determina o valor MÍNIMO que alguém pode tirar num dado rolado por ela. Por ex:
+jogador faz teste de concentração, tira 12. Se ele rolar um dado e o resultado der menos que 6, ele substitui por um 6.
+>jogadores que não estão em combate tem um bônus de +10 pra esse teste.
+>esse teste tem uma penalidade de até 5, baseado na sua vida perdida: 20% da vida perdida: -1, 40% da vida perdida: -2.. e assim por diante. Mas como não é possível ter 100% da vida perdida e continuar se concentrando em algo, quando o jogador está com 1 de vida, a penalidade é de -5.
+>o teste de concentração é afetado por buffs e debuffs em caso de adicionar bônus ou diminuir o valor do teste.
+>O DM pode adicionar modificadores, vantagem, e desvantagem a esse teste, se ele achar que algo está afetando a concentração de algum personagem.
+
+
+foco arcano:
+>focos arcanos tem RD = HP, resistência mágica, RD mágica = 2*HP, e 5 de hp base.
+>toda vez que falha em manter concentração numa magia (fez um teste de concentração e falhou), rola arcanismo com CD = 10+nível da magia. Se falhar, o foco perde o nível da magia em HP.
+>você pode armazenar mana no seu foco:
+	> Caso o foco não esteja com sua vida cheia, a cada 5 de mana armazenado nele, ele recupera 1 de vida.
+	> Caso a vida do foco esteja cheia, o limite de mana que pode ser armazenado é 20 de mana, valor que quando é atingido, o limite de HP do seu foco sobe em 1, consumindo essa mana.
+	> Ao transferir mana pro foco enquanto medita ou dorme, a taxa de transferência é 10 de mana por hora. 
+	> Você pode fazer outras tarefas leves enquanto passa mana para seu foco, mas precisa suceder num teste de concentração CD 15, e a taxa de armazenamento é 1 de mana a cada 10min.
+	> Essas taxas são pros focos básicos. Focos com valores diferentes podem ser feitos ou encontrados.
+	> Ao usar uma magia com um foco que tem mana armazenada dele, ele consome direto desta.
+	> O visual de um foco vai aperfeiçoando conforme ele adquire mais HP máximo. Por exemplo um foco que é um galho pode ir ficando cada vez mais duro, com cores mais vivas, e até criar folhas/frutas. Um fator em comum é que as cores ficam mais nítidas, ficando fácil de se destacar de um item comum.
+	> Armazenar mana num foco (antes que ele a consuma e a transforme em HP) faz com que ele brilhe levemente no escuro (um brilho muito fraco, que não ilumina quase nada, mas forte o suficiente para conseguir ler um pergaminho caso você cole o foco no papel. O brilho é mais útil pra achar o foco no escuro do que para iluminar algo.)
+	> Você pode pegar a mana armazenada num foco que não é seu, mas a taxa de 'roubo' é de 1/3, pois você não está sincronizado com o item do mesmo jeito que o dono.
+
+
+lançar magias:
+>toda vez que lançar uma magia rodará um teste do seu atributo usado pra magias. Se tirar um valor menor que o nível da magia, a magia falha e o foco perde o nível da magia em HP. Caso o foco arcano esteja com menos de 5 de HP, tem penalidade de (5-HPdoFoco) no teste de magia.
+>é possível ter, aproximadamente, de 50% a 150% de eficácia ao lançar uma spell. 100% de eficácia seria a spell do jeito que ela está escrita, e esse valor é atingido quando o dado de magia é igual ao CD = nível da magia+10. Para cada ponto além desse CD, a magia fica 5% mais eficaz, e pra cada ponto que faltou pra esse CD, ela é 5% menos eficaz.
+>Quando a magia é mais eficaz do que o normal (100%), um dos atributos dela vai receber um aumento. Seja o range, a área de efeito, o casting time, ou o dano, ou outros. Cada magia tem suas especificidades, mas o importante é que só uma delas é afetada pelo aumento. Seja lá qual for o atributo, que ele seja numérico, assim você pode multiplicar a porcentagem obtida pelo atributo, e obter o valor final. Ex: eficiencia de 130% na spell, e o player quis multiplicar o dano. O dano pós rolagem deu 10, mas vai sair 13 (10*1.3).
+>Quando a magia é menos eficaz que o normal, o mesmo se aplica (o player escolhe qual atributo da magia vai ser mais fraco que os outros).
+
+
+recuperação de mana:
+>A cada 24 horas, em descanso ou não, sua mana é restaurada(a uma taxa de 1/24 da sua manapool por hora). A regeneração é maior para classes que recuperam slots de magia em descansos curtos.
+
+HP partes do corpo
+Acerto partes do corpo
+Acerto ranged 
+
+
+

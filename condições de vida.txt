@@ -1,0 +1,10 @@
+Sendo realista, o guerreiro mais experiente, e o mais novo, tem vitalidades semelhantes. Não iguais, mas semelhantes. Logo, observo que a HP dos personagens não deve crescer muito ao longo de seu nível. O que deve aumentar é sua esquiva, resultando em menos dano levado de ataques >enquanto eles estão conscientes do ataque e podem desviar<. Pois um guerreiro novato e um experiente, se têm o mesmo físico (FOR e CON), e estão amarrados, eles vão aguentar um tanto semelhante de dano.
+
+Para equilibrar as magias e dar alguma forma das pessoas se defenderem dos magos mais fortes, um atributo de resistência mágica deve ser criado. Ele funciona da seguinte forma: com o tempo, os aventureiros vão aprendendo a moldar o véu mágico ao redor deles para criar escudos que protegem contra diversas coisas. Os aventureiros que não querem se aprofundar na manipulação do véu adquirem itens mágicos que os fornecem escudos.
+
+Sendo assim, a vida total de alguém vai depender de sua raça e constituição. E só.
+
+A esquiva de alguém aumenta sua capacidade de, quando consciente de um ataque, desviar dele parcialmente, se não totalmente, e consequentemente levar menos dano.
+A força de alguém aumenta sua resistência a maioria dos tipos de dano - que é diferente de vida total.
+O atributo de spellcasting de alguém aumenta sua habilidade em formar escudos com o véu mágico.
+A constituição de alguém aumenta a sua HP máxima, e sua resistência a desmaio

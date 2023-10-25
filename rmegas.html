@@ -9,7 +9,8 @@
 <nav id="lateral">
 <a href="#"><h1>Índice rápido</h1></a>
 <ul>
-    <li><a href="#tests">Testes</a></li>
+    <li><a href="#saude">Saúde</a></li>
+    <li><a href="#tests">Atributos e Testes</a></li>
     <li><a href="#comb">Combate</a></li>
     <ul>
         <li><a href="#hit">Acerto, Esquiva e RD</a></li>
@@ -29,414 +30,667 @@
     <h1>RMG<h1>
 </header>
 <div id="intro">
-    <h1>Introdução</h1>
-        <p>Rmegas é um sistema de RPG de mesa semelhante ao D&D 5e, porém com mudanças significativas ao combate e a rolagens de dado no geral.</p>
+<h1>Introdução</h1>
+    <p>RMG é uma adaptação de RPGs de turno para um sistema de RPG em que o combate ocorre de maneira fluida, e com o auxílio de software para uma mestragem mais fácil. RMG: Mago, é uma adaptação de Mago, o Despertar. Além de adaptar o combate para que ele comporte a fluidez e concorrência das ações, outras adaptações mecânicas foram feitas.</p>
+</div>
+<div id="saude">
+<h1>Saúde</h1>
+    <h3>Pontos de Vida e Dano</h3>
+        <p>Os PV de alguém se tratam de seu <b><i>VIG + Tamanho</i></b>. Como referência, o tamanho de um humano é 5 (os atributos das raças pode ser visto no capítulo <i>Criação de Personagem</i>). Danos comuns, não armados, por padrão, causam dano contundente. Danos armados causam dano letal. E danos ainda mais perigosos causam dano agravante.</p>
+        <p>O preencher da barra de vida de alguém é feito da direita pra esquerda. Os danos à esquerda são os mais recentes. Se a barra de vida de certa pessoa for completamente preenchida, com qualquer combinação de danos, a cada 10 UTs a pessoa faz um teste de VIG para tentar permanecer acordada. Se a barra estiver preenchida e a pessoa levar dano contundente, para cada ponto de dano contundente levado, agrave um dos danos. Ao agravar um dano você deve priorizar os menos recentes e menos graves. Caso a barra de vida de alguém esteja preenchida de dano letal, a pessoa está sangrando, e a cada minuto tem um de seus danos agravados. Uma barra de vida apenas com danos agravantes significa na morte da pessoa.</p>
+        <p>Quando alguém tem sua barra de vida preenchida com dano contundente, ou sofre 1 ou mais de dano letal ou agravado, a pessoa ganha a condição de <i>abatida</i>.</p>
+        <p>Toda vez que alguém sofrer dano igual ou maior a 50% de seus PV, dentro de 3UTs, a pessoa faz um teste de PER+VIG CD 3 para evitar rolar a tabela de dano massivo.</p>
+        <p>A duração para os efeitos de dano massivo é de:</p>
+        <i class="formula" id="system-shock-f">2UTs+Dano Sofrido</i>
+        <table>
+            <tr class="primeira"><td>Resultado</td><td>Efeito</td></tr>
+            <tr><td class="primeira">1</td><td>A pessoa cai inconsciente, instável (um dano é agravado a cada minuto se ela não tiver cuidado médico), e um de seus danos é agravado. A pessoa não pode acordar.</td></tr>
+            <tr><td class="primeira">2-3</td><td>A pessoa cai inconsciente. A pessoa não pode acordar.</td></tr>
+            <tr><td class="primeira">4-5</td><td>A pessoa perde o fôlego e ganha 1 cansaço.</td></tr>
+            <tr><td class="primeira">6-7</td><td>A pessoa perde o fôlego.</td></tr>
+            <tr><td class="primeira">8-10</td><td>A pessoa ganha 1 cansaço.</td></tr>
+        </table>
+    <h3>Dano mental</h3>
+        <p>Todos feitiços que causam dano mental afetam uma barra de vida separada. Toda pessoa tem uma barra de vida mental, referente à saúde cerebral da pessoa. Falta de ar (para "abastecer" o cérebro) e grandes quebras de expectativa/traumas também causam esse tipo de dano.</p>
+        <i class="formula">PER + 3 = HP mental</i>
+        <p>Dano massivo também se aplica, porém substitua os efeitos de perder o fôlego por ficar atordoada.</p>
+    <h3>Vida perdida</h3>
+        <p>Qualquer teste físico terá uma penalidade de -1 para cada 20% de vida perdida de quem faz o teste. O mesmo se aplica para testes mentais e HP mental. Testes sociais são penalizados por ambas as HPs.</p>
+    <h3>Cansaço</h3>
+        <p>Diversos efeitos podem causar cansaço. Para cada nível de cansaço, suas rolagems são penalizadas em 1: caso a rolagem seja benéfica, subtraia 1 dado da sua rolagem, e caso seja uma rolagem ruim pra você (você quer 0 sucessos), adicione 1 dado na rolagem. O cansaço é obtido em níveis. Os primeiros são recuperados mais facilmente, e os últimos não. Você pode perder o primeiro nível de cansaço ao tomar 5 minutos inteiros para sentar e respirar fundo. Descansos recuperam mais níveis de cansaço.</p>
+        <p>Se uma pessoa para de respirar, role VIG para determinar o quanto de ar tinha no pulmão naquele momento. 2 sucessos significa um pulmão cheio, 1 sucesso, pela metade, e 0 sucessos, um que acabou de esvaziar. Uma pessoa pode ficar, caso encha o pulmão, VIG*60 segundos sem respirar caso esteja inerte. Uma pessoa em atividade leve usa 3/4 desse tempo, e uma pessoa em atividade comum usa metade desse tempo. Durante esse período, atividades leves gatilham rolagem de <b>Fôlego</b>, e atividades comuns gatilham a rolagem de Fôlego com vantagem. Após o fim do tempo, a pessoa desmaia, e toma 1 de dano contundente em seus PVM a cada 5 UTs.</p>
+        <p>O máximo de cansaços que alguém pode obter é igual 1+VIG. Após atingir o limite, quando for obter um novo cansaço, apenas adicione 1 de dano contundente nos PV e PVM da pessoa.</p>
 </div>
 <div id="tests">
-    <h1>Atributos e testes</h1>
-        <h3>Psique</h3>
-            <p>Psique é um novo atributo, que representa a sua resistência mental, quase que uma constituição mental. Ela é usada para fazer o teste de atenção, para resistir a efeitos mentais de magias, e também é o atributo que define sua HP mental. A psique depende de outros atributos, e não pode ser alterada diretamente. Ela é definida pela fórmula abaixo, e é sempre arredondada pra baixo.</p>
-            <i class="formula">CAR+INT+SAB/3</i>
-        <h3>Vida perdida</h3>
-          <p>Qualquer teste terá uma penalidade de -1 para cada 10% de vida perdida de quem faz o teste.</p>
-        <h3>Críticos</h3>
-            <p>Não terão mais acertos críticos. Um 19 não vai mais ser tão diferente de um 20, e de um 1 pra um 2 também não vai mudar muita coisa.</p>
-        <h3>Atenção</h3>
-            <p>A atenção é um novo teste no jogo, ele indica o quanto alguém está concentrado em executar uma tarefa, limitando o quão mal a criatura pode executar sua tarefa. Se você faz um bom teste de atenção, significa que você não está suscetível a falhas bestas na execução de sua tarefa.</p>
-            <p>Objetivamente, a atenção é o mínimo que você pode tirar num dado. O resultado é baseado num teste de psique:</p>
-            <i class="formula" id="con">Atenção = 🎲CON/2</i>
-            <p>Considerações sobre o teste:</p>
-            <ul>
-                <li>O teste de atenção é tirado sempre que o jogador quiser, e não gasta tempo extra (mas pode).</li>
-                <li>Fora de combate, criaturas têm um bônus de +5 no teste.</li>
-                <li>É possível gastar uma ação padrão antes de qualquer tarefa, e gastar a ação inteira apenas se concentrando no que for fazer. Essa ação concede um bônus de +4 no teste. Esse uso só serve para tarefas que levam menos de 2 ações padrão de tempo para serem executadas.</li>
-                <li>O teste de atenção é afetado por buffs, vantagens, debuffs, etc.</li>
-                <li>O mestre e o jogador podem adicionar modificadores (negativos) ao teste à vontade, caso eles achem que algo está atrapalhando o personagem a se concentrar.</li>
-            </ul>
-        <h3>Dano Psíquico</h3>
-            <p>Todas spells que causam dano psiquico tiveram seus danos alterados. Agora toda criatura tem uma barra de vida separada, referente à saúde mental da criatura. Dano psiquico desconta nessa barra de vida. Essa HP escala com a soma dos seus atributos mentais:</p>
-            <i class="formula">CAR*5 + WIS *5 + INT*5 + 15 = HP mental</i>
-            <p>Caso um atributo seja negativo, desconsidere a multiplicação dele por 5. A HP mental máxima mínima de uma criatura é sempre 1. Caso a HP mental de uma criatura se esgote, ela morre.</p>
-            <p>Dano massivo também se aplica ao dano mental, mas a tabela a ser rolada é essa abaixo, e o save é feito com seu atributo de psique.</p>
-            <table></table>
+<h1>Atributos e testes</h1>
+    <p>Para determinar o sucesso de um teste, role um número de d10. Um 8, 9, ou 10, em um dado significa que obteve um sucesso. Normalmente 1 sucesso é o suficiente para realizar a ação. Caso o dado resulte em 10, você pode rolar ele novamente, potencialmente obtendo mais sucessos do que o número de dados rolados.</p>
+    <p>Os testes são feitos conforme os jogadores demonstram que seus personagens vão tomar certas ações não-triviais. Um teste é formado pela combinação de um Atributo e de uma Habilidade. A combinação pode ser uma bem óbvia, como por exemplo um teste de DEX+Furto para roubar algo, rapidamente, do bolso de alguém. Apenas 1 sucesso indica que o objetivo foi atingido. No caso de uma combinação menos óbvia, porém possível, como por exemplo FOR+Persuasão para tentar seduzir alguém usando seus músculos, mais do que um sucesso é necessário para realizar a ação.</p>
+    <h3>Limite dos Atributos</h3>
+        <p>Assim como em determinada rolagem, uma pessoa usa um Atributo+Habilidade, para fazer uma rolagem de algum feitiço, uma pessoa usa o atributo Mágico dela, Gnose, + o quanto ela tem de experiência da Arcana usada. Para magia, é como se Gnose fosse o atributo genérico que se aplica a tudo envolvendo magia, e as Arcanas fossem as Habilidades.</p>
+    <h3>Modificadores</h3>
+        <p>Sempre que algo fornecer um modificador para determinada rolagem, leia os números como dados a mais/ a menos. Um modificador de +2 numa rolagem fornece +2 d10, e um modificador de -1 implica em remover 1d10 dos seus dados antes da rolagem. Modificadores positivos são chamados bônus e modificadores negativos são chamados penalidades.</p>
+    <h3>Pontos de Sucesso</h3>
+        <p>Há 3 recursos que uma pessoa pode usar para melhorar rolagens: Força de Vontade, Pontos de Sucesso Comuns, e Pontos de Sucesso Arcanos (PSC e PSA). Um Mago pode gastar seus PSC e PSA pontos para <b>garantir</b> algum número de sucessos para determinada rolagem, e isso pode ser decidido mesmo após a rolagem. O limite de pontos que alguém pode gastar por ação é igual ao tanto de mana que é permitido gastar por turno.</p>
+        <p>A obtenção de Pontos de Sucesso é simples: para cada dado rolado que <b>não</b> obteve um sucesso (8, 9, ou 10), ganhe 0.20 pontos de Sucesso do tipo correspondente. Também é possível converter 1 mana para um ponto de sucesso Arcano, ou 2 pontos de sucesso comuns, como uma ação livre.</p>
+        <p>Pontos de Força de Vontade (FdV) podem ser gastados para obter um bônus de 3 em alguma rolagem.</p>
+    <h3>Sucessos Excepcionais</h3>
+        <p>Caso uma rolagem obtenha 5 ou mais sucessos, se torna um sucesso excepcional, e quem executou a ação ganha uma Condição benéfica.</p>
+
 </div>
 <div id="comb">
-    <h1>Combate</h1>
-        <h3 id="hit">Acerto e Esquiva</h3>
-            <p>O <b>acerto</b> foi alterado de uma forma que os resultados dos ataques não são mais dicotômicos (acerta ou erra, critando ou não). Será introduzido o conceito de acertos de raspão, acertos em cheio, acertos medianos, etc. Isso será feito da seguinte maneira: Será definido um dano base, e ele vai ser aplicado dependendo de quanto o atacante obteve na sua rolagem de acerto.
-            </p>
-            <p>A <b>esquiva</b> é um teste que se assemelha à CA do d&d 5e. Os acertos são feitos contra a esquiva do alvo, representando o quão bem o alvo desviou do ataque. O teste de esquiva é nada mais nada menos do que um <b>DEX SAVE + intuição</b>. Intuição é usada porque quando uma criatura percebe que está sendo alvo de um ataque (lembrando que o tempo de reação é 2UTs), faz um teste de intuição contra o atacante, para presumir onde o ataque vai acertar. Entretanto, se uma criatura estiver no meio de uma ação, ela faz o teste com uma penalidade que varia com a velocidade do ataque (valores estão na seção de armas). Se o teste resultou em um valor negativo, utilize 0 ao invés disso.</p>
-            <i class="formula" id="pen">Penalidade = (Tempo total do ataque * 2) - 3</i>
-            <i class="formula" id="esqi">Acerto = 2🎲atk - (🎲intuição + 🎲DEX SAVE - penalidade)</i>
-            <p>Dados de dano não serão mais rolados. O seu <b>dano base</b> será equivalente ao dano médio do seu ataque(por exemplo, o dano médio de 1d8+4 é 4.5+4 = 9.5). Tendo um número fixo pro dano base, o dano que o alvo leva se altera dependendo do quão bem a arma atingiu ele. Para cada ponto que se supera a Esquiva do alvo, se causa 10% do dano base. Então por exemplo, ao tirar 21 no seu dado de acerto, contra um alvo com 10 de Esquiva, você causará 110% do dano base. Em termos matemáticos, o dano total se dá pela conta:</p>
-            <i class="formula" id="dato">Dano Total = Dano Base * Acerto/10</i>
-            <p>Os atributos de margem de crítico e de multiplicador de crítico aumentam o seu dano base em uma pequena quantia, de uma forma que o dano médio resultante sempre permanece o mesmo, se comparado ao d&d 5e padrão.
-            </p>
-            </br>
-            <p>Entretanto não acaba aí! No RMG também é possível acertar ataques em todas partes do corpo de seu alvo. Naturalmente, ataques já acertam partes variadas do corpo do alvo, cada parte do corpo de alguém tem uma chance diferente de ser acertada, indicando que algumas partes são maiores/menores que outras. Ter partes do corpo danificadas tem um resultado direto no funcionamento das mesmas, por exemplo: caso você acabe com a perna de uma criatura, o deslocamento dela será reduzido.</p>
-            <p> É possível declarar um ataque a uma parte do corpo específica de alguém, o atacante toma uma penalidade -5 no ataque, o alvo recebe 1/2 Dodge, e o tempo do ataque sobe em 30% (o dano permanece o mesmo).
-            </p>
-        <h3 id="CA">Armaduras e CA</h3>
-            <p>A sua <b>CA</b>, agora define a sua Resistência a Dano(RD). Todo dano que você levar em lugares protegidos por sua armadura, antes de debitar da sua HP, vc reduz ele no tanto de RD que vc tem. Por exemplo, alguém que levaria 10 de dano, mas tem 4 de RD, leva apenas 6 de dano. O tanto que uma armadura fornece de CA pode ser encontrado <b><a href="http://dnd5e.wikidot.com/armor">aqui</a></b>.
-            </p>
-            <p> Ignore a limitação de destreza, e o bônus em CA baseado na deztreza, que as armaduras dão, agora isso funciona de outra forma: Se a sua <b>força</b> for superior ou igual ao tanto de CA que você tem, você não tem penalidades na sua Esquiva. Caso sua força não atinja sua CA, você recebe 1 em penalidade na Esquiva para cada ponto que falta na sua pontuação de força para que ela chegue na sua CA.</p>
-            <p>E a RD de alguém é calculada da seguinte maneira:</p>
-            <i class="formula" id="rd">RD = 2*(CA - 10)</i>
-            <h4>Proteção mágica</h4>
-                <p>Uma proteção mágica é um buff que pode ser aplicado em armaduras para que ela forneça uma redução de dano para danos provenientes de magias. Encantamentos mágicos podem oferecer, no máximo, 3x a RD física que a armadura oferece. Por ex., uma armadura simples de couro fornece 11  de CA, RD = (11-10)*2 = 2. Então poderia receber um encantamento de, no máximo, 6 de RD mágico. Um encantamento acaba após ter absorvido 10x seu valor de RD, essa é a HP dele.</p>
-                <p>Para encantar uma armadura, um artífice precisa gastar 15po e 1 de mana por RD do encantamento. Um teste é feito, afetando o quanto de HP o encantamento terá:</p>
-                <i class="formula" id="rd-mag">HP final = HP base*(1+(🎲+prof+Int-10)/100)</i>
-        <h3 id="turn">Turnos em Combate</h3>
-            <div id="acoes">
-                <table id="tta">
-                    <tr class="primeira"><td>Ação</td><td>Tempo gasto</td></tr>
-                    <tr><td>Ação Padrão</td><td>6</td></tr>
-                    <tr><td>Atk Padrão Arma leve</td><td>5</td></tr>
-                    <tr><td>Atk Padrão Arma normal</td><td>6</td></tr>
-                    <tr><td>Atk Padrão Arma Pesada</td><td>7</td></tr>
-                    <tr><td>Movimento</td><td>2</td></tr>
-                    <tr><td>Ação Bônus</td><td>2</td></tr>
-                </table>
-                <h4>Observações:</h4>
-                    <ul>
-                        <li>A ação de movimento só é usada quando o personagem não vai fazer nada além de andar. Pro caso dele ir preparando um ataque enquanto anda para algum lugar, o tempo usado é o maior, entre o do movimento e o do ataque.</li>
-                        <li>Correr não é mais dobrar o seu deslocamento naquele turno.  Para cada quadrado movido na mesma direção, os próximos deslocamentos custam menos tempo. O maior deslocamento que você pode começar é 1/6 do seu deslocamento em 2UTs, e o máximo que pode atingir é o quanto conseguiria se mover, em 1 ação padrão, 1 ação de movimento, e 1 ação padrão. Um teste de atletismo é feito, multiplicando o valor da corrida, possivelmente obtendo melhores valores: <i>Deslocamento máximo base*(1+(🎲 de atletismo)/100)</i></li>
-                        <li>Para tudo que indica que tem duração de X turnos, considere que isso dura X*12 unidades de tempo.</li>
-                        <li>Para tudo que é usado no seu turno, e acaba no começo do seu próximo turno, utilize a duração de 8UTs. Para tudo que acaba no fim do seu próximo turno, use 12UTs.</li>
-                    </ul>
-            </div>	
-            <p>O sistema de turnos foi completamente remodelado(em relação ao D&D 5e). No RMG, o combate é fluido, e todas as coisas acontecem ao mesmo tempo.Isso é administrado através de um programa que determina quando um jogador está 'livre para agir' ou não.
-            </p>
-            <p>A <b>iniciativa</b>, nesse contexto, determina o quão rápido um personagem é para entrar em combate. Acontece da seguinte forma: os personagens têm iniciativa de 0 a 10. Quando um personagem atinge 10 de iniciativa, significa que ele notou a situação em que ele se encontra, e que está pronto para entrar em ação. <i>"Ah, mas e no caso de você não conseguir atingir o mínimo de 10 com o 🎲iniciativa?"</i> - Nesse caso (que na verdade praticamente todos os casos serão assim), a iniciativa de TODOS é incrementada num tanto, até que a pessoa com a maior iniciativa atinja 10. A partir desse momento, essa pessoa poderá entrar em combate, e o resto dos participantes vai entrando em combate conforme atingirem 10 na sua iniciativa.
-            </p>
-            <p>Os turnos não terão sempre as mesmas ações: 1 ação padrão, 1 ação bônus, e 1 ação de movimento. O personagem poderá usar as ações dele na ordem em que ele quiser. Caso ele queira usar, por exemplo, 3 ações bônus, e depois uma padrão, é possível, e nenhum tempo será perdido. A maioria das ações poderá ser realizada em movimento, assim o personagem não perde muito tempo entre as ações. Isso será balanceado definindo um tempo que o personagem leva para realizar uma ação. O preço, em tempo, das ações foi definido de acordo com a tabela ao lado.
-            </p>
-            <p>Mesmo tendo o tempo exato das ações, é importante que o jogador só use essa tabela como uma referência que o dê informações como:"ações padrão demoram mais que uma ação de movimento", ou "é possível fazer 3 ações bônus no mesmo período em que alguém faz uma ação padrão". Não fique fissurado nos valores de tempo, tanto por que pra cada classe, tem algumas pequenas mudanças(como velocidades de deslocamento diferente, ataques mais curtos do que outros, ou ações especiais) e decorar tudo seria um inferno. Então use a tabela apenas pra ter uma ideia do tempo de uso das ações. <b>Não há a necessidade de decorar nenhum desses valores</b>.
-            </p>
-        <h3 id="folego">Fôlego</h3>
-            <p>Uma criatura tem um limite de ações qeu pode fazer consecutivamente, Uma criatura pode agir, sem parar, por <i>2+Mod CON turnos</i>, antes de ter que tomar uma ação padrão apenas para recuperar o fôlego, ou 2 ações padrão fazendo ações de baixo esforço (usar/pegar itens, usando o dobro do tempo), 1/2 Dodge, 1/2 movimento base. Um fôlego é denominado por <i>12UTs + Mod CON</i>. Uma criatura tem <i>2+Mod CON (mínimo 1/2)</i> fôlegos. Toda vez que uma criatura esgota seu fôlego, reduz seus fôlegos máximos em 1, até um limite de 1/2. Testes e saves realizados enquanto não se tem fôlego usam 50% mais tempo para ser realizados, e tem desvantagem. Uma criatura pode adiar a sua recuperação de fôlego em até MOD CON turnos (min 1), até que ela começa a sofrer 1 de dano psiquico por UT.</p>
-            <p>Se uma criatura subitamente para de respirar, ela perde 5UTs de fôlego por UT. Se não há mais fôlego disponível, leva 5 de dano psíquico por UT.</p>
-        <h3 id="system-shock">Choque</h3>
-            <p>Toda vez que uma criatura perder 50% da vida máxima em 3UTs, a criatura faz um teste de constituição CD 15 para evitar rolar a tabela de dano massivo.</p>
-            <p>A duração para os efeitos do system shock é de:</p>
-            <i class="formula" id="system-shock-f">2UTs+%de vida perdida além de 50%</i>
-            <table>
-                <tr class="primeira"><td>d10</td><td>Efeito</td></tr>
-                <tr><td>1</td><td>A criatura cai inconsciente. A criatura não pode acordar até o fim da duração.</td></tr>
-                <tr><td>2-3</td><td>A criatura cai inconsciente e instável (precisa rolar death saves). A criatura não pode acordar até o fim da duração.</td></tr>
-                <tr><td>4-5</td><td>A criatura fica atordoada pela duração.</td></tr>
-                <tr><td>6-7</td><td>A criatura não pode tomar reações e tem desvantagem em todos seus testes pela duração.</td></tr>
-                <tr><td>8-10</td><td>A criatura não pode tomar reações pela duração</td></tr>
+<h1>Combate</h1>
+    <h3 id="hit">Acerto e Esquiva</h3>
+        <p>O teste para acertar alguém numa luta depende, basicamente, do tipo da arma e do tipo de ataque:</p>
+        <table>
+            <tr class="primeira"><td>Tipo</td><td>Teste</td></tr>
+            <tr><td>Desarmado</td><td>FOR+Briga</td></tr>
+            <tr><td>Arma corpo-a-corpo</td><td>FOR+Armamento</td></tr>
+            <tr><td>Arremesso Arma corpo-a-corpo</td><td>DEX+Esportes</td></tr>
+            <tr><td>Arma à distância</td><td>DEX+Pontaria</td></tr>
+        </table>
+        <p>A <b>esquiva</b> é um teste que representa o quão bem o alvo desviou do ataque. O teste de esquiva se dá por <b>RAC + DEX + Esportes</b>. Raciocínio é usado para representar quando uma pessoa percebe que está sendo alvo de um ataque. O resultado do teste de esquiva se torna uma penalidade no teste do ataque do atacante. Para cada sucesso obtido na esquiva, o atacante ganha uma penalidade de -1 em seu ataque.</p>
+        <i class="formula" id="esqi">PenalidadeATK = ESQ(sucessos)</i>
+        <p>O dano causado é o número de acertos obtidos no teste, somado de qualquer modificador de arma. Note que os modificadores de arma são adicionados após o teste, implicando que a arma usada não altera a facilidade do acerto, mas somente o dano causado. Os atributos das armas estão presentes na aba de <b>Equipamento</b>.</p>
+        <p>Caso o dano causado seja desarmado, se trata de dano contundente. Caso seja o dano proveniente de uma arma, é dano letal.</p>
+    <h3 id="melee">Combate corpo-a-corpo</h3>
+    <p>Ataques podem ser feitos de maneiras diferentes. Há várias maneiras de se lutar, então imagine esses ataques, Rápido, Padrão, e Lento, como variações de ataques que podem ser feitos no combate, como por exemplo a diferença entre um jab, um soco padrão, e um uppercut bem calculado. Os valores nos modificadores indicam o modificador na rolagem de ataque, e o modificador nos acertos, após o ataque, respectivamente.</p>
+    <table>
+            <tr class="primeira"><td>Tipo de Ataque</td><td>Alteração no Tempo de Ataque</td><td>Modificadores</td></tr>
+            <tr><td>Rápido</td><td>-30%</td><td>+2/-2</td></tr>
+            <tr><td>Padrão</td><td>/</td><td>/</td></tr>
+            <tr><td>Lento</td><td>+30%</td><td>+2/-2</td></tr>
+    </table>
+    <h3 id="ranged">Combate à distância</h3>
+        <p>A penalidade da Esquiva do alvo não se aplica a ataques feitos com armas à distância. Para atacar propriamente com armas a distância, é necessário, primeiro, mirar. Após ter sacado a arma já é possível atirar, porém com uma penalidade de -6. A penalidade diminui em -1 para cada UT gasta mirando no alvo. É possível conseguir dados bônus caso mire por mais tempo ainda. Para cada 4UTs gastas mirando a atiradora ganha +1 dado bônus pro ataque, até um limite de 3 dados bônus. Ao realizar um ataque à distância, 2 dados são reduzidos do total de dados do ataque, representando o efeito da coice. Essa redução tem um limite de 4 dados a menos do valor base. Se essa redução fizer com que o total de dados seja inferior ao valor base do ataque(DEX+Pontaria), é possível perder essas penalidades gastando tempo mirando, perdendo penalidades a uma taxa de 1:1UT mirando.</p>
+        <p>A distância em que um ataque é feito pode implicar numa penalidade a ele. Ataques a distância tem valores base para as distâncias Curta, Média, e Longa. Armas a distância têm suas distâncias curtas descritas na aba de <b>Equipamento</b>. Armas corpo-a-corpo que são arremessadas usam a seguinte distância curta:</p>
+        <i class="formula" id="throw">FOR+DEX+Esportes-Tamanho_arma</i>
+        <p>A distância média se trata do dobro da distância curta, e a longa, o quádruplo. Armas aerodinâmicas têm todas suas distâncias dobradas. Pessoas só podem arremessar objetos com o Tamanho inferior à sua FOR.</p>
+        <p>Quando um ataque à distância erra seu alvo, se há alguma pessoa na trajetória do ataque (atrás do alvo), role um ataque com desvantagem contra essa pessoa (rolagem obrigatória, mesmo tanto de dados da primeira rolagem) -/+ diferença de tamanhos das pessoas.</p>
+    <h3 id="esp">Acertos Específicos</h3>
+        <p>Acertos podem ser feitos a partes específicas do corpo, ao custo de uma penalidade aplicada antes da rolagem do ataque:</p>
+        <table>
+            <tr><td>Parte do corpo</td><td>Penalidade</td></tr>
+            <tr><td>Braço</td><td>2</td></tr>
+            <tr><td>Perna</td><td>2</td></tr>
+            <tr><td>Cabeça</td><td>3</td></tr>
+            <tr><td>Mão</td><td>4</td></tr>
+            <tr><td>Olho/Ouvido</td><td>5</td></tr>
+        </table>
+        <p>Os acertos no braço e na perna podem causar o efeito de <i>Braço/Perna danificado</i> na vítima caso causem mais dano do que o VIG do alvo. Os acertos na cabeça causam 1 a mais de dano. Os acertos na mão, caso causem qualquer dano, causam o efeito de Braço danificado na vítima. Os acertos no olho ou no ouvido, caso causem qualquer dano, causam a condição de Cego ou Surdo na vítima, de acordo com a parte acertada.</p>
+        <p>Os valores e partes do corpo podem mudar de acordo com o alvo e com a posição do atacante em relação ao alvo.</p>
+    <h3 id="CA">Armaduras e RD</h3>
+        <p>A sua <b>RD</b> (Resistência a Dano) é um atributo que depende quase que exclusivamente das suas armaduras. Todo dano sofrido em lugares protegidos por alguma armadura, antes de debitar dos PV, ele é reduzido pelo tanto de RD a armadura tem. Por exemplo, alguém que levaria 10 de dano letal na cabeça, mas tem 4 de RD no capacete, leva apenas 6 de dano letal. Armaduras:</p>.
+        <table><h3>inserir tabela aqui</h3></table>
+    <h3>Proteção mágica</h3>
+        <p>Uma proteção mágica é um buff que pode ser aplicado em armaduras para que ela forneça um bônus de resistência a certas magias. </p>
+        <h4>inserir proteções mágicas aqui</h4>
+    <h3 id="turn">Turnos em Combate</h3>
+        <div id="acoes">
+            <table id="tta">
+                <tr class="primeira"><td>Ação</td><td>Tempo gasto</td></tr>
+                <tr><td>Ação Instantânea</td><td>6</td></tr>
+                <tr><td>Conjuração de um Feitiço</td><td>4 - 13</td></tr>
+                <tr><td>Movimento (1m)</td><td>~1.5</td></tr>
+                <tr><td>Ação Reflexiva</td><td>2</td></tr>
             </table>
-        <h3 id="mov-atk">Combate em movimento</h3>
-            <p>Seus ataques corpo a corpo tem seu dano multiplicado pela velocidade relativa (sua em relação ao alvo) em <i>m/s</i>. O multiplicador mínimo é 1. Testes também ganham uma penalidade baseado na sua velocidade: a partir de 1m/s, o ataque tem uma penalidade de -1 para cada 0.2m/s adicional, até um limite máximo de -15.</p>
-            <p>Uma criatura pode encontrar obstáculos ao correr, como pedras no caminho, ou pequenas criaturas. Obstáculos tem um CD de 0 a 10, baseado na altura, área de superfície, material e visibilidade do obstáculo. Uma criatura passando por um obstáculo faz um DEX SAVE, se falhar, cai X*1.5m à frente, multiplicado pela velocidade da criatura. O CD do teste também é multiplicado pela velocidade da criatura.</p>
-            <p>Ao pular, considere que sua velocidade total é a soma vetorial das suas velocidades.</p>
-        <h3 id="oportAtk">Ataques de oportunidade</h3>
-                <p>Se alguma criatura tem alguma característica que a 'protege' de ataques de oportunidade, alguém que os ataques de oportunidade teriam desvantagem contra essa criatura, agora ela pode usar Dodge enquanto usa seu movimento base. Criaturas que tem imunidade a ataques de oportunidade podem usar Dodge enquanto se movem a até 2x seu movimento base.</p>
-        <h3 id="ranged">Ataques à distância</h3>
-            <p>Quando um ataque à distância erra seu alvo, se há alguma criatura na trajetória do ataque, role um ataque com desvantagem contra essa criatura (rolagem obrigatória). Caso queira acertar uma criatura que esteja atrás de alguma outra criatura, role com 1 desvantagem * diferença de tamanhos das criaturas.</p>
-        <h3 id="melee">Ataques corpo a corpo</h3>
-            <p>Como pode ser visto na tabela de ações em <a href="#acoes">Turnos em Combate</a>, armas de pesos diferentes têm tempos de execução de ataque diferente. Entretanto não existe só um tipo de ataque: é possível executar um corte rápido, um mais forte, uma coronhada, um chute(!!), uma puxada no braço seguida de uma fincada de adaga no bucho, entre outros. Qualquer tipo de ataque pode ser executado, e nesse capítulo você encontra alguns deles já parametrizados, e o tempo de ataques diferentes:</p>
-            <h4>Velocidades de ataques</h4>
-                <table>
-                        <tr class="primeira"><td>Tipo de Ataque</td><td>Alteração no Tempo de Ataque</td><td>Modificadores</td></tr>
-                        <tr><td>Rápido</td><td>-30%</td><td>+2 atk, -30% de dano</td></tr>
-                        <tr><td>Padrão</td><td>/</td><td>/</td></tr>
-                        <tr><td>Lento</td><td>+30%</td><td>-2 atk, +30% de dano base</td></tr>
-                </table>
-            <h4>Tipos de ataque</h4>
-                <table>
-                        <tr class="primeira"><td>Ataque</td><td>Tempo Padrão</td><td>Efeito</td><td>Dano</td></tr>
-                        <tr><td>Soco</td><td>4</td><td>/</td><td>Atk desarmado</td></tr>
-                        <tr><td>Chute frontal</td><td>5</td><td>Empurrada é dobrada</td><td>Atk desarmado+1</td></tr>
-                        <tr><td>Rasteira</td><td>6</td><td>Possívelmente derruba criatura.</td><td>Atk desarmado</td></tr>
-                        <tr><td>Bloquear</td><td>/</td><td>Bloqueia um ataque</td><td>/</td></tr>
-                        <tr><td>Shield bash</td><td>4</td><td>Empurrada é dobrada</td><td>1+For</td></tr>
-                        <tr><td>Parry</td><td>Atk rápido</td><td>Deflete um ataque</td><td>/</td></tr>
-                        <tr><td>Puxar/Empurrar</td><td>6</td><td>Empurra uma criatura</td><td>/</td></tr>
-                        <tr><td>Cabeçada</td><td>2</td><td>Causa e sofre dano. Provável que atordoe.</td><td>1+For</td></tr>
-                        <tr><td>Coronhada</td><td>Atk Padrão</td><td>Causa dano não-letal</td><td>No mínimo 1d4+For</td></tr>
-                        <tr><td>Asfixiar</td><td>4</td><td>Esgota o fôlego do alvo ao longo do tempo</td><td>/</td></tr>
-                        <tr><td>Torcida de arma penetrante</td><td>Atk Padrão</td><td>Ignora Esquiva e RD do alvo</td><td>Dano da arma</td></tr>
-                        <tr><td>Dodge</td><td>2UTs</td><td>Desvia melhor de ataques frontais pela duração</td><td>/</td></tr>
-                </table>
-            <h4>Descrição dos ataques</h4>
+            <h4>Observações:</h4>
                 <ul>
-                    <li><h5>Chute frontal</h5></li>
+                    <li>A ação de movimento só é usada quando o personagem não vai fazer nada além de andar. Pro caso dele ir preparando um ataque, ou uma conjuração, enquanto anda para algum lugar, o tempo usado é o maior.</li>
+                    <li>Para correr, para cada segundo movido na mesma direção, os próximos deslocamentos custam menos tempo.</li>
+                    <li>Para tudo que indica que tem duração de X turnos, considere que isso dura X*10 unidades de tempo.</li>
+                    <li>Para qualquer efeito que inicia no seu turno e acaba no começo do seu próximo turno, utilize a duração de 8UTs. Para tudo que começa no seu turno e acaba no fim do seu próximo turno, use 12UTs.</li>
+                </ul>
+        </div>	
+        <p>O RMG usa um sistema próprio para determinar a ordem dos turnos em combate. A ideia é que o combate seja fluido, e que todas as coisas aconteçam ao mesmo tempo. Como é difícil que uma pessoa administre tudo o que engloba uma cena de combate, o mestre terá o auxílio de um software que faz o registro das ações, e exibe, de maneira intuitiva, o que está acontecendo, e quando um personagem está 'livre para agir' ou não.
+        </p>
+        <p>Há inúmeras ações que um personagem pode tomar em seu turno. A maioria das ações poderá ser realizada em movimento ao custo de uma penalidade baseada na velocidade do personagem. O preço, em tempo, das ações foi definido de acordo com a tabela ao lado.
+        </p>
+        <p>A <b>iniciativa</b>, nesse contexto, determina o quão rápido um personagem é para entrar em combate. Acontece da seguinte forma: os personagens têm iniciativa de 0 a 10. Quando um personagem atinge 10 de iniciativa, significa que ele notou a situação em que ele se encontra, e que está pronto para entrar em ação. <i>"Ah, mas e no caso de você não conseguir atingir o mínimo de 10 com o 🎲iniciativa?"</i> - Nesse caso (coincidentemente a maioria dos casos), a iniciativa de TODOS é incrementada num tanto, até que a pessoa com a maior iniciativa atinja 10. A partir desse momento, essa pessoa poderá entrar em combate, e o resto dos participantes vai entrando em combate conforme atingirem 10 na sua iniciativa. Após o início do combate, caso sua iniciativa ainda não esteja em 10, implica que você ainda não notou que há um combate ocorrendo. Caso alguém te ataque, ou te avise sobre o combate, ou você descubra que o combate está ocorrendo, sua iniciativa se torna 10 e você está pronto pra agir.
+        </p>
+        <p>Mesmo tendo o tempo exato das ações, é importante que o jogador só use essa tabela como uma referência que o dê informações como:"ações instantânea demoram mais que uma ação de movimento", ou "é possível fazer 3 ações reflexivas no mesmo período em que alguém faz uma ação instantânea". Não fique fissurado nos valores de tempo. Tanto por que dependendo de alguns atributos, o tempo de algumas ações pode mudar, e decorar tudo seria um inferno. <b>Então use a tabela apenas pra ter uma ideia do tempo de uso das ações. Não há a necessidade de decorar nenhum desses valores</b>.
+        </p>
+    <h3 id="veloc">Velocidade e Deslocamento</h3>
+        <p>A velocidade de uma criatua é usada para calcular o deslocamento dela, valor usado quando se decide se mover. O deslocamento é medido em tempo (UTs), e se trata de quantas UTs são necessárias pra pessoa se deslocar 1m. O deslocamento mínimo de uma pessoa é o mínimo de tempo que ela pode precisar pra percorrer 1m, e é usado quando a pessoa está correndo. Para cada segundo correndo, o deslocamento da pessoa diminui, até o limite do deslocamento mínimo. A diminuição, por segundo, é de 20% da diferença do deslocamento base pro deslocamento mínimo, levando 20 segundos de corrida para se atingir a velocidade máxima. No começo da corrida é feito um teste de disparada (Dex+Esportes) que adiciona 20% de ganho de velocidade por sucesso, aumentando a velocidade inicial e diminuindo o tempo necessário para se atingir a velocidade máxima. O deslocamento de uma pessoa, em UT/m, é:</p>
+        <i class="formula">D = 12/v</i>
+    <h3 id="folego">Fôlego</h3>
+        <p>Uma pessoa tem um limite de ações que pode fazer consecutivamente. Uma pessoa pode agir, sem parar, por <i>1+VIG turnos</i>, antes de ter que tomar uma ação padrão apenas para recuperar o fôlego, ou 2 ações padrão fazendo ações de baixo esforço (usar/pegar itens, usando o dobro do tempo), 1/2 Dodge, 1/2 movimento base. Toda vez que uma pessoa esgota seu fôlego e não o recupera e se mantém em atividade, para cada VIG UTs em atividade, faça uma rolagem de Fôlego. Uma rolagem de Fôlego é igual a seu nível de cansaço + 1. O cansado ganha 1 cansaço por sucesso.</p>
+    <h3 id="mov-atk">Combate em movimento</h3>
+        <p>Seus ataques corpo a corpo tem dano extra baseado na velocidade relativa (sua em relação ao alvo) em <i>m/s</i>. Testes também ganham uma penalidade baseado na sua velocidade: a partir de 1m/s, qualquer teste tem uma penalidade de -1 para cada m/s adicional, até um limite máximo de -6.</p>
+        <p>Uma pessoa pode encontrar obstáculos ao correr, como pedras no caminho, ou pequenas pessoas. Obstáculos tem um CD de 1 a 5, baseado na altura, área de superfície, material, visibilidade do obstáculo, e velocidade da pessoa. Uma pessoa passando por um obstáculo faz um teste de Esportes+Dex. Se falhar, cai 2*Velocidade metros à frente. </p>
+        <p>Ao pular, considere que sua velocidade total é a soma vetorial das suas velocidades.</p>
+    <h3 id="melee">Manobras</h3>
+        <p>Como pode ser visto na tabela de ações em <a href="#acoes">Turnos em Combate</a>, existem tempos de ataque diferentes. Entretanto não existe só um tipo de movimento em combate: é possível executar uma coronhada, um chute(!!), uma rasteira, um parry, entre outros. Qualquer tipo de ataque pode ser executado, e nesse capítulo você encontra alguns deles já parametrizados, e o tempo de ataques diferentes:</p>
+        <table>
+                <tr class="primeira"><td>Ataque</td><td>Tempo Padrão</td><td>Efeito</td><td>Dano</td></tr>
+                <tr><td>Soco</td><td>4</td><td>/</td><td>0</td></tr>
+                <tr><td>Chute frontal</td><td>5</td><td>Empurrada é dobrada</td><td>1</td></tr>
+                <tr><td>Rasteira</td><td>6</td><td>Possívelmente derruba pessoa.</td><td>0</td></tr>
+                <tr><td>Agarrar</td><td>6</td><td>Permite mais ataques</td><td>/</td></tr>
+                <tr><td>Coronhada</td><td>Atk Padrão</td><td>Possívelmente atordoa/desmaia.</td><td>0</td></tr>
+                <tr><td>Varredura</td><td>Atk Lento</td><td>Tenta acertar multiplos alvos</td><td>-1</td></tr>
+                <tr><td>Bloquear</td><td>/</td><td>Bloqueia um ataque</td><td>/</td></tr>
+                <tr><td>Shield bash</td><td>4</td><td>Empurrada é dobrada</td><td>Arma</td></tr>
+                <tr><td>Parry</td><td>Atk rápido</td><td>Deflete um ataque</td><td>/</td></tr>
+                <tr><td>Dodge</td><td>2UTs</td><td>Desvia melhor de ataques frontais pela duração</td><td>/</td></tr>
+        </table>
+        <h4>Descrição dos ataques</h4>
+            <ul>
+                <li><h5>Chute frontal</h5></li>
+                    <ul>
+                        <li><p>Faça um teste de FOR+Briga. Dano: 1. O dano é considerado o dobro para cálculos de empurrada.</p></li>
+                    </ul>
+                <li><h5>Rasteira</h5></li>
+                    <ul>
+                        <li><p>Faça um teste de FOR+Briga. Modificador: -2/+1. O dano é considerado o triplo para cálculos de empurrada, porém só pode ter pontos de apoio como alvo, e o alvo não pode ser empurrado, apenas derrubado.</p></li>
+                    </ul>
+                <li><h5>Coronhada</h5></li>
+                    <ul>
+                        <li><p>Role um FOR+Armamento, Adicione 1 dado ao ataque caso a arma seja concussiva, e FOR no ataque mesmo se a arma tiver Finesse. Só pode ser realizado se o alvo não te vê, se está surpreso, ou se algo restringe o movimento dele. Caso a coronhada faça a pessoa rolar a tabela de dano massivo, ao invés disso, a pessoa apenas cai inconsciente.</p></li>
+                    </ul>
+                <li><h5>Varredura</h5></li>
+                    <ul>
+                        <li><p>Faça um ataque lateral, tentando acertar a primeira coisa que aparecer. O ataque tem como alvo 2 ou mais criaturas. Faça uma rolagem de ataque para a primeira criatura a ser atingida. Caso erre, faça uma rolagem para a segunda pessoa a ser atingida, e assim por diante. Todos testes têm penalidade de -1. Caso a arma tenha Varrer, mesmo acertando uma pessoa o ataque continua. Nesse caso, acumule -1 de dano para cada pessoa acertada na Varredura para rolagens subsequentes.</p></li>
+                    </ul>
+                <li><h5>Agarrar/Imobilizar/Asfixiar</h5></li>
+                    <ul>
+                        <li><p>Tente agarrar uma pessoa, ou aumentar o grau de uma agarrada já existende, fazendo um teste de FOR+Briga contestado pela FOR+Briga ou DEX+Esportes do alvo. O tempo do ataque pode ser alterado. O teste pode ter como alvo um membro específico do alvo, se aplicada a penalidade adequada. Aumenta o grau de agarrada em 1 para cada sucesso no teste. Os efeitos de cada grau podem ser vistos abaixo:</p></li>
+                        <table>
+                            <tr class="primeira"><td>Grau</td><td>Movimentos disponíveis</td></tr>
+                            <tr><td>1</td><td>Controlar Arma, Libertar-se, Virar, Desarmar</td></tr>
+                            <tr><td>2</td><td>Asfixia, Cabeçada, Forçar membro, Agredir</td></tr>
+                            <tr><td>3</td><td>Derrubar, Segurar</td></tr>
+                            <tr><td>4</td><td>Imobilizar</td></tr>
+                        </table>
+                        <p>Observações:</p>
+                        </br>
                         <ul>
-                            <li><p>Faça um teste de ataque desarmado. O dano é considerado o dobro para cálculos de empurrada.</p></li>
+                            <li>Quando agarrados, a velocidade dos envolvidos se torna 0, caso o tamanho das pessoas seja igual, e a pessoa agarrada tem uma penalidade na Esquiva igual ao grau de Agarrada.</li>
+                            <li>Quando se usa um membro seu para imobilizar um membro do alvo, esse membro não pode mais realizar ataques.</li>
+                            <li>Tentar imobilizar um alvo com qualquer parte do corpo que não seja as mãos, leva uma penalidade de -3.</li>
+                            <li>Ao tentar imobilizar um alvo, o corpo inteiro é usado, e há uma penalidade/buff igual ao dobro da diferença de tamanhos.</li>
                         </ul>
-                    <li><h5>Rasteira</h5></li>
+                    <li><h5>Controlar Arma</h5></li>
                         <ul>
-                            <li><p>Faça um teste de ataque desarmado. O dano é considerado o triplo para cálculos de empurrada, porém só pode ter pontos de apoio como alvo.</p></li>
+                            <li><p>Pode usar uma arma que está empunhada por você, ou pela outra pessoa, para direcionar para a pessoa agarrada. Faz um teste de FOR contra FOR. O grau de agarrada é usado como penalidade/buff no teste, e se a arma está sob controle do oponente, -2 de penalidade.</p></li>
                         </ul>
-                    <li><h5>Bloquear</h5></li>
+                    <li><h5>Libertar-se</h5></li>
                         <ul>
-                            <li><p>Faz um DEX SAVE com vantagem contra o ataque de uma criatura que tem você como alvo para determinar se consegue posicionar adequadamente o escudo/arma; se falha, leva o ataque como se sua esquiva fosse 0, se sucede, o escudo leva dano igual ao dano do ataque contra esquiva 0. Não-escudos falham automaticamente contra ataques perfurantes. Faz um STR SAVE para determinar se segurou bem o ataque(somente contra ataques concussivos), com um modificador baseado no peso das armas. Caso falhe no STR SAVE, fica com a guarda aberta pela duração.</p></li>
-                            <i class="formula" id="block">Duração =  Saldo ataque *⏲⚔ atk padrão / 10</i>
+                            <li><p>Para sair de uma agarrada, uma pessoa faz uma Ação Reflexiva que é um teste de FOR contra a FOR de quem agarra. Quando ela sucede nesse teste, pra cada 1 que ela supera o teste do oponente, ela diminui o grau de agarrada em um, libertando um ou mais membro à sua escolha.</p></li>
                         </ul>
-                    <li><h5>Shield bash</h5></li>
+                    <li><h5>Virar</h5></li>
                         <ul>
-                            <li><p>Ataque corpo a corpo feito com um escudo. Causa 1+For de dano concussivo. O dano é considerado o dobro para cálculos de empurrada. O ataque pode ser rápido ou lento, alterando adequadamente o dano do ataque.</p></li>
+                            <li><p>É possível virar uma agarrada a seu favor. Faça um teste de FOR+Briga contestado pelo FOR+Briga de quem domina a agarrada, porém quem está agarrando tem um bônus igual ao grau da agarrada. Se suceder, zere o grau de agarrada, e ganhe 1 grau por sucesso.</p></li>
                         </ul>
-                    <li><h5>Parry</h5></li>
+                    <li><h5>Desarmar</h5></li>
                         <ul>
-                            <li><p>Faz um teste de ataque rápido com penalidade -10. Caso o parry não conecte antes do ataque do oponente, falha automaticamente. Adiciona o resultado ao seu teste de esquiva. Se se esquivar do ataque, para cada ponto que a esquiva superou o ataque, abre a guarda do atacante pela duração, o fazendo receber velocidade = 0, 2 desvantagens na esquiva e penalidade -10, e desvantagem em testes de FOR/DEX. Ao sofrer um parry uma criatura imediatamente faz um DEX SAVE, podendo reduzir o tempo de recuperação em uma % igual a 2* o resultado do dado.</p></li>
-                            <i class="formula" id="parry">Duração =  Saldo esquiva *⏲⚔ atk padrão / 10</i>
-                        </ul>
-                    <li><h5>Dodge/Esquivar</h5></li>
-                        <ul>
-                            <li><p>Recebe recebe 3 vantagens nos testes de esquiva, pela duração. 1/2 Dodge implica em apenas 1 vantagem nos testes de esquiva.</p></li>
-                        </ul>
-                    <li><h5>Puxar/Empurrar</h5></li>
-                        <ul>
-                            <li><p>Teste de atletismo contestado pelo save de DEX ou FOR do alvo. O alvo só pode escolher DEX se tentou desviar de uma empurrada, e o atacante só pode escolher puxar se tem pelo menos meio nível de agarrada com o alvo. Caso suceda, empurra o alvo <i>Saldo/3 metros</i>. Puxar em -5 de penalidade.</p></li>
-                        </ul>
-                    <li><h5>Coronhada</h5></li>
-                        <ul>
-                            <li><p>Só pode ser realizado se o alvo não te vê, se está surpreso, ou se algo restringe o movimento dele. Não use sua proficiência no ataque (a não ser que seja proficiente em coronhada). Caso a coronhada faça a criatura rolar a tabela de dano massivo, ao invés disso, a criatura apenas cai inconsciente. Se a arma usada para a coronhada não for concussiva, use 1d4+For no dano.</p></li>
-                        </ul>
-                    <li><h5>Agarrar/Imobilizar/Asfixiar</h5></li>
-                        <ul>
-                            <li><p>Utilize um de seus ataques para tentar agarrar um membro de uma criatura ou agarrar ainda mais uma criatura já agarrada. Faça um teste de força (atletismo) contestado pelo atletismo ou acrobacia do alvo. Aumenta o grau de agarrada em 1 para cada 5 pontos que sucede no teste, além do primeiro. Os efeitos de cada grau podem ser vistos abaixo:</p></li>
-                            <table>
-                                <tr class="primeira"><td>Grau</td><td>Membros Imobilizados</td><td>Ataques especiais disponíveis</td></tr>
-                                <tr><td>1</td><td>0.5</td><td>Asfixia</td></tr>
-                                <tr><td>2</td><td>1</td><td>Cabeçada, Forçar membro</td></tr>
-                                <tr><td>3</td><td>1.5</td><td></td></tr>
-                                <tr><td>4</td><td>2</td><td></td></tr>
-                                <tr><td>5</td><td>2.5</td><td></td></tr>
-                                <tr><td>6</td><td>3</td><td>Imobilizar</td></tr>
-                            </table>
-                            <p>Observações:</p>
-                            </br>
-                            <ul>
-                                <li>Quando agarrados, a velocidade dos envolvidos se torna 0, caso o tamanho das criaturas seja igual.</li>
-                                <li>Quando se usa um membro seu para imobilizar um membro do alvo, esse membro não pode mais realizar ataques.</li>
-                                <li>Tentar imobilizar um alvo com qualquer parte do corpo que não seja as mãos, leva uma penalidade de -8.</li>
-                                <li>Ao tentar imobilizar um alvo, em uma ação, com 2 membros seus(2 braços/2 pernas/variações), ganha um bônus de +8.
-                                </li>
-                                <li>Para sair de uma agarrada, o alvo faz um teste de força contra o total do seu atributo de força. Quando ele sucede nesse teste, pra cada 5 que ele supera da CD, ele diminui o grau de agarrada um membro aleatório, ou ele toma 5 de penalidade no teste para cada membro que ele escolha priorizar.</li>
-                                <li>Forçar membro se trata de usar um sucesso de agarrada para pegar um membro completamente imobilizado, e forçar ele de uma maneira dolorosa. A CD do teste é 15+For do alvo, e causa (For*% de vida) daquele membro para cada 1 ponto que supera a CD. Se causar 160% da vida do membro proveniente disso, ou de concussivo, quebra o membro.</li>
-                            </ul>
-                        </ul>
-                    <li><h5>Cabeçada</h5></li>
-                        <ul>
-                            <li><p>Só pode realizar se tiver no mínimo 0.5 nível de agarrada com o alvo(não importa quem está agarrando, mas a  cabeça dos 2 tem que estar próxima). Faça um ataque, usando força, contra 1 alvo: tem um bônus igual a 2*nivel de agarrada do alvo, a esquiva do alvo é considerada 0, e é proficiente caso seja proficiente em ataques desarmados. Causa 1+For no alvo e sofre o modificador de constituição do alvo(os dois danos aumentam juntos com o teste).</p></li>
+                            <li><p>Retire uma arma inserida na agarrada. A arma deve estar sob seu controle.</p></li>
                         </ul>
                     <li><h5>Asfixia</h5></li>
                         <ul>
-                            <li><p>Só pode realizar se a cabeça é um membro, imobolizado(mesmo que parcialmente). Realiza um teste de força contra um save de constituição de um alvo. Se sucede, nas próximas 4UTs, o alvo perde o valor da diferença desses testes, em fôlego (1:1). No fim desse período, os testes são feitos novamente, até o alvo se soltar, ou morrer. Testes de asfixia têm desvantagem caso o nível de agarrada na cabeça seja apenas 1/2.</p></li>
+                            <li><p>Só pode realizar se a cabeça é um membro imobolizado. Realiza um teste de FOR contra FOR do alvo. Se sucede, nas próximas 6UTs, além do alvo não respirar, ele perde, em UTs de fôlego, duas vezes a diferença desses testes.</p></li>
                         </ul>
-                </ul>
-            <h4 id="prop_atk">Propriedades de tipos de dano</h4>
+                    <li><h5>Cabeçada</h5></li>
+                        <ul>
+                            <li><p>Para fazer esse movimento, não importa quem está agarrando, mas a cabeça dos 2 tem que estar próxima. Faça um ataque, usando FOR+Briga, modificador +2/+-X. X = 3*diferença de tamanho: tem um bônus igual ao nivel de agarrada do alvo, a esquiva do alvo é considerada 0. Você também leva o mesmo dano que causa, mas caso tenha que rolar a tabela de dano massivo, sucede no teste automaticamente.</p></li>
+                        </ul>
+                    <li><h5>Forçar Membro</h5></li>
+                        <ul>
+                            <li><p>Forçar membro se trata de pegar um membro agarrado e forçar ele de uma maneira dolorosa. Faça um teste de FOR+Briga. A penalidade do teste é um teste de FOR+VIG do alvo, e causa 1 de dano letal para cada 1 ponto que supera a CD. Se causar mais do que o VIG do alvo, quebra o membro.</p></li>
+                        </ul>
+                    <li><h5>Agredir</h5></li>
+                        <ul>
+                            <li><p>Caso tenha sucedido num teste de Controlar Arma anteriormente, pode agredir o alvo com a arma. Faça um teste usando FOR+Armamento, use o modificador da arma. Considere Esquiva 0.</p></li>
+                        </ul>
+                    <li><h5>Derrubar</h5></li>
+                        <ul>
+                            <li><p>Qualquer participante da agarrada pode usar essa ação. Faça um teste de FOR contra FOR para derrubar todas pessoas envolvidas na agarrada. Sucedendo ou falhando, as pessoas caem. A pessoa que perdeu o teste leva o saldo dos testes em dano concussivo.</p></li>
+                        </ul>
+                    <li><h5>Segurar/Pegar Cobertura</h5></li>
+                        <ul>
+                            <li><p>Qualquer participante da agarrada pode usar essa ação, porém a pessoa que agarra tem um bônus igual ao grau de agarrada. Como uma ação reflexiva, faça um teste de FOR contra FOR para tentar segurar a outra pessoa parada por até 6UTs. Caso suceda no teste, você e a outra pessoa perdem esquiva igual ao saldo do teste. Esse teste pode ser usado para usar a pessoa como um escudo vivo contra ataques à distância(veja cobertura em <b>ataques à distância)</b>.</p></li>
+                        </ul>
+                    <li><h5>Imobilizar</h5></li>
+                        <ul>
+                            <li><p>Restrinja o movimento do oponente com algum material (corrente, silver tape, cordas). Requer um teste de FOR+Sobrevivência contra FOR/DEX + Briga/Esportes. Você tem um bônus igual ao grau de agarrada.</p></li>
+                        </ul>
+                    
+                    </ul>
+                <li><h5>Bloquear</h5></li>
+                    <ul>
+                        <li><p>Faz um teste de Briga/Armamento+DEX contra o ataque de uma pessoa que tem você como alvo para determinar se consegue posicionar adequadamente o escudo/arma corpo a corpo/membro do corpo (defender com um membro do corpo é útil quando se está usando uma armadura); se falha, leva o dano total do ataque, se sucede, o escudo/arma corpo a corpo/membro do corpo leva o dano total do ataque. Caso falhe no teste de empurrada, fica com a guarda aberta pela duração (limite de 6 UTs).</p></li>
+                        <i class="formula" id="block">Duração =  Saldo ataque/defesa *⏲⚔ atk / 10</i>
+                    </ul>
+                <li><h5>Shield bash</h5></li>
+                    <ul>
+                        <li><p>Ataque corpo a corpo feito com um escudo. Use o Modificador do escudo. O dano é considerado o dobro para cálculos de empurrada. O ataque pode ser rápido ou lento, alterando adequadamente o dano do ataque.</p></li>
+                    </ul>
+                <li><h5>Parry</h5></li>
+                    <ul>
+                        <li><p>Inicialmente, faz um teste de Armamento+DEX contra o ataque de uma pessoa que tem você como alvo para determinar se consegue posicionar adequadamente o escudo/arma; se falha, tem uma penalidade de -3 na esquiva por 6UTs, se sucede, considere a soma dos valores dos seus sucessos contra os dados do ataque. E então, se superar o ataque, o atacante fica com a guarda aberta pela duração. Por mais que o ataque seja rápido, considere que a conexão do parry aguarda a conexão do ataque. Caso o ataque do oponente conecte antes do parry, o parry falha automaticamente. Guarda aberta significa velocidade = 0, -3 na esquiva e em testes de FOR/DEX.</p></li>
+                        <i class="formula" id="parry">Duração =  Saldo  testes *⏲⚔ atk padrão / 5</i>
+                    </ul>
+                <li><h5>Dodge/Esquivar</h5></li>
+                    <ul>
+                        <li><p>Permite que você re-role os dados de Esquiva que não obtiveram sucesso, ou adicione 2 sucessos à sua esquiva. 1/2 Dodge implica em re-rolar metade desses dados, ou adicionar 1 sucesso ao total. Arredonde pra cima. Declare antes de rolar Esquiva. Demora 2 UTs para começar a aplicar, e pode ser mantido indefinidamente.</p></li>
+                    </ul>
+            </ul>
+    <h3 id="prop_atk">Propriedades de tipos de dano</h3>
+        <ul>
+            <li><h4>Perfurante</h4></li>
                 <ul>
-                    <li><h5>Perfurante</h5></li>
+                    <li><h5>Torcida:</h5></li>
                         <ul>
-                            <li><h5>Torcida:</h5></li>
-                                <ul>
-                                    <li class="sub">Após acertar um ataque perfurante num alvo, pode escolher não tirar sua arma do corpo dele. Nesse caso, o alvo deve estar agarrado, ou você deve estar sendo agarrado por ele. Em ataques subsequentes, pode torcer a arma para causar mais dano, porém dessa vez ignorando a esquiva do alvo e sua RD. Após realizar qualquer ataque de torcida, o atacante pode remover sua arma do alvo, não custando nenhum tempo extra.</li>
-                                </ul>
-                            <li><h5>Contra Ataque</h5></li>
-                                <ul>
-                                    <li class="sub">Você pode usar sua arma perfurante de uma maneira defensiva. Se sua arma for curta (alcance 1.5m), você pode usar uma ação bônus para tentar interceptar o próximo ataque corpo a corpo que vem da sua frente. Recebe uma penalidade na esquiva, e, quando recebe um ataque, faz um teste de ataque contra o membro do inimigo que está sendo usado para te atacar(vai ser o braço na maioria das vezes). Recebe 1 de penalidade no teste e 0.5 de penalidade na esquiva para cada 5% de chance de acertar o membro, mas o dano é aumentado em 50%.</li>
-                                </ul>
+                            <li class="sub">Após acertar um ataque perfurante num alvo, pode escolher não tirar sua arma do corpo dele e fazer um teste de agarrada com bônus igual ao dano causado (não custa tempo adicional). Caso suceda na agarrada, no próximo ataque, pode torcer a arma para causar mais dano, ignorando a Esquiva e RD do alvo, além de gastar 30% menos tempo para realizar o ataque. Um ataque de torcida pode ser feito apenas uma vez por perfuração. </li>
                         </ul>
-                    <li><h5>Cortante</h5></li>
+                    <li><h5>Contra Ataque</h5></li>
                         <ul>
-                            <li>Pode amputar um membro:</li>
-                                <ul>
-                                    <li class="sub">Caso cause, no mesmo ponto, 160% de dano de corte (em relação a vida total do membro), aquele ponto é cortado . O sangramento de membros amputados é dobrado.</li>
-                                </ul>
-                            <li>Todo dano cortante causa, ou aumenta, sangramento no alvo, fazendo o alvo perder HP a cada 4 UTs.</li>
-                            <i class="formula" id="cort">% de vida perdida do membro para dano cortante*20% da vida máxima do membro*% de vida atual</i>
-                        </ul>
-                    <li><h5>Concussivo</h5></li>
-                        <ul>
-                            <li><p>Dano concussivo pode desestabilizar uma área do alvo, ou empurrar o alvo. Para que o dano concussivo desestabilize um membro, ele deve causar pelo menos 5% da vida total do membro. Se um membro que está no meio de um ataque contra você for desestabilizado, para cada 5% de vida perdida do membro, o ataque ganha uma penalidade de 1. Para ataques ocorrendo perpendicularmente a você, a penalidade é cortada pela metade. Caso o membro não esteja em movimento, ele não pode se mover por algumas UTs . Se a cabeça toma esse tipo de dano, o alvo ganha desvantagem em todos os testes pela duração. E a duração é triplicada.</p>
-                            <i class="formula" id="desest">UTs desestabilizado = % de vida perdida pelo membro nesse ataque/20</i>
-                            <p>O torso não pode ser desestabilizado. Ao invés disso, o alvo perde parte de seu fôlego total e faz um teste de força para tentar não ser empurrado.</p>
-                            <i class="formula" id="conc-folego">Fôlego perdido = 2*(% de vida perdida pelo membro nesse ataque)%</i>
-                            <i class="formula" id="conc-empurrada">Empurrada = X*(% de vida perdida pelo membro nesse ataque - SAVE FOR)</i>
-                            <table>
-                                <tr class="primeira"><td>Tamanho do alvo</td><td>X (Distância da empurrada)</td></tr>
-                                <tr><td>Pequeno e Minúsculo</td><td>5cm</td></tr>
-                                <tr><td>Médio</td><td>10cm</td></tr>
-                                <tr><td>Grande</td><td>20cm</td></tr>
-                                <tr><td>Gigante</td><td>30cm</td></tr>
-                            </table>
-                            <p>Uma criatura em movimento que é empurrada na mesma direção em que se move tem a empurrada multiplicada pela velocidade relativa do alvo em relação ao atacante.</p>
-                            <p>Ao atingir um ponto de apoio com dano concussivo (Ex: perna), o cálculo de empurrada é igual ao do torso, porém independente da empurrada, se for maior que <i>15*X</i>, então a criatura é derrubada, e não é empurrada. Se não derrubar a criatura, para cada 3 pontos que falhou no teste, o alvo fica <i>0.5 UTs</i> desbalanceado, recebendo desvantagem em saves contra empurradas e -5 na esquiva.</p>
-                            </li>
-                                <li><p>O peso de armas implica em empurrada adicional:</p>
-                                <table>
-                                    <tr class="primeira"><td>Peso</td><td>Empurrada adicional</td></tr>
-                                    <tr><td>Médio</td><td>1/3</td></tr>
-                                    <tr><td>Pesado</td><td>2/3</td></tr>
-                                </table>
-                                <p>Isso implica que parte do dano de algumas armas <b>também</b> é considerado como dano concussivo. Para armas já concussivas, isso acumula.</p></li>
+                            <li class="sub">Você pode usar sua arma perfurante de uma maneira defensiva. Se sua arma for curta (alcance 1.5m), você pode usar uma Ação Reflexiva para tentar interceptar o próximo ataque corpo a corpo que vem da sua frente. Recebe uma penalidade X+2 na esquiva, e, quando recebe o ataque, faz um teste de ataque com bônus X e penalidade -3 contra o membro do inimigo que está sendo usado para te atacar.</li>
                         </ul>
                 </ul>
-            <h4 id="item_dmg">Dano em armas</h4>
-                <p>Armas podem colidir em combate e causar dano umas as outras. Se armas colidem num ataque um contra a outra, as duas levam o dano que a outra causaria. Considere que a Esquiva de toda arma é 0. Armas tem uma RD igual a duas vezes seu peso em libras. A RD base é duplicada caso a arma seja concussiva, cortante, ou de metal (cumulativo). A HP de uma arma é definida pela tabela abaixo.</p>
-                <table>
-                    <tr class="primeira"><td>Arma</td><td>Peso</td><td>HP</td><td>Resistência</td><td>Vulnerabilidade</td></tr>
-                    <tr class="primeira"><td colspan="5">Armas Simples Melee</td></tr>
-                    <tr><td>Club</td><td>2</td><td>30</td><td></td><td>fogo</td></tr>
-                    <tr><td>Dagger</td><td>1</td><td>54</td><td>fogo</td><td>concussivo</td></tr>
-                    <tr><td>Greatclub</td><td>10</td><td>39</td><td></td><td>fogo</td></tr>
-                    <tr><td>Handaxe</td><td>2</td><td>54</td><td>fogo</td><td>concussivo</td></tr>
-                    <tr><td>javelin</td><td>2</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Light hammer</td><td>2</td><td>45</td><td>concussivo, fogo</td><td></td></tr>
-                    <tr><td>Mace</td><td>4</td><td>54</td><td>concussivo, fogo</td><td></td></tr>
-                    <tr><td>Quarterstaff</td><td>4</td><td>30</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Sickle</td><td>2</td><td>39</td><td>fogo</td><td></td></tr>
-                    <tr><td>Spear</td><td>3</td><td>39</td><td>fogo</td><td></td></tr>
-                    <tr class="primeira"><td colspan="5">Armas Simples Ranged</td></tr>
-                    <tr><td>Crossbow, light</td><td>5</td><td>30</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Dart</td><td>1/4</td><td>12</td><td>fogo</td><td>concussivo</td></tr>
-                    <tr><td>Shortbow</td><td>2</td><td>15</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Sling</td><td>1/8</td><td>18</td><td>concussivo</td><td>fogo</td></tr>
-                    <tr class="primeira"><td colspan="5">Armas Marciais Melee</td></tr>
-                    <tr><td>Battleaxe</td><td>4</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Flail</td><td>2</td><td>30</td><td>concussivo</td><td>fogo</td></tr>
-                    <tr><td>Glaive</td><td>6</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Greataxe</td><td>7</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Greatsword</td><td>6</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Halberd</td><td>6</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Lance</td><td>6</td><td>54</td><td></td><td>fogo, concussivo</td></tr>
-                    <tr><td>Longsword</td><td>3</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Maul</td><td>10</td><td>54</td><td>concussivo, fogo</td><td></td></tr>
-                    <tr><td>Morningstar</td><td>4</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Pike</td><td>18</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Rapier</td><td>2</td><td>45</td><td>fogo</td><td>concussivo</td></tr>
-                    <tr><td>Scimitar</td><td>3</td><td>45</td><td>fogo</td><td></td></tr>
-                    <tr><td>Shortsword</td><td>2</td><td>45</td><td>fogo</td><td></td></tr>
-                    <tr><td>Trident</td><td>4</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>War pick</td><td>2</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Warhammer</td><td>2</td><td>54</td><td>fogo</td><td></td></tr>
-                    <tr><td>Whip</td><td>3</td><td>24</td><td>concussivo</td><td>fogo</td></tr>
-                    <tr class="primeira"><td colspan="5">Armas Marciais Ranged</td></tr>
-                    <tr><td>Blowgun</td><td>1</td><td>18</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Crossbow, hand</td><td>3</td><td>18</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Crossbow, heavy</td><td>18</td><td>39</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Longbow</td><td>15</td><td>30</td><td>-</td><td>fogo</td></tr>
-                    <tr><td>Net</td><td>15</td><td>15</td><td>concussivo</td><td>fogo</td></tr>
-                </table>
-                <table>
-                    <tr class="primeira"><td>Armor</td><td>RD</td><td>HP</td><td>Resistência</td><td>Vulnerabilidade</td></tr>
-                    <tr class="primeira"><td colspan="5">Armadura Leve</td></tr>
-                    <tr><td>Padded</td><td>2</td><td>50</td><td>concussivo</td><td>ácido, fogo, cortante</td></tr>
-                    <tr><td>Leather</td><td>2</td><td>60</td><td> concussivo </td><td>ácido, fogo, cortante </td></tr>
-                    <tr><td>Studded leather</td><td>4</td><td>70</td><td>concussivo</td><td>ácido, fogo</td></tr>
-                    <tr class="primeira"><td colspan="5">Armadura Média</td></tr>
-                    <tr><td>Hide</td><td>4</td><td>70</td><td>concussivo</td><td>ácido, fogo, cortante</td></tr>
-                    <tr><td>Chain shirt</td><td>6</td><td>75</td><td>concussivo, cortante</td><td>perfurante</td></tr>
-                    <tr><td>Scale mail</td><td>8</td><td>80</td><td>concussivo, cortante</td><td>perfurante</td></tr>
-                    <tr><td>Breastplate</td><td>8</td><td>85</td><td>concussivo, cortante, perfurante</td><td></td></tr>
-                    <tr><td>Half plate</td><td>10</td><td>90</td><td>concussivo, cortante, perfurante</td><td></td></tr>
-                    <tr class="primeira"><td colspan="5">Armadura Pesada</td></tr>
-                    <tr><td>Ring mail</td><td>8</td><td>85</td><td>concussivo, cortante</td><td>perfurante</td></tr>
-                    <tr><td>Chain mail</td><td>12</td><td>90</td><td>concussivo, cortante</td><td> perfurante </td></tr>
-                    <tr><td>Splint</td><td>14</td><td>95</td><td>concussivo, cortante</td><td></td></tr>
-                    <tr><td>Plate</td><td>16</td><td>100</td><td> concussivo, cortante, perfurante </td><td></td></tr>
-                    <tr class="primeira"><td colspan="5">Shield</td></tr>
-                    <tr><td>Shield</td><td>5</td><td>50</td><td> concussivo, cortante, perfurante </td><td>fogo</td></tr>
-                </table>
+            <li><h4>Cortante</h4></li>
+                <ul>
+                    <li><h5>Sangramento</h5></li>
+                        <ul>
+                            <li class="sub">Todo dano cortante, se feito na mesma área de um dano cortante anterior, além de causar o dano do ataque, agrava um dos danos causados ali previamente, ou Amputa o membro caso ele já sofra de dano Agravante.</li>
+                        </ul>
+                    <li><h5>Amputar</h5></li>
+                        <ul>
+                            <li class="sub">Caso cause dano em um membro que tem dano agravado, aquele membro é cortado. O sangramento de membros amputados assim é dobrado(+1 de dano letal a cada 30 segundos, ao invés de a cada minuto).</li>
+                        </ul>
+                </ul>
+            <li><h4>Concussivo</h4></li>
+                <ul>
+                    <li><h5>Empurrada</h5></li>
+                        <ul>
+                            <li class="sub"><p>Dano concussivo pode desestabilizar uma área do alvo, ou empurrar o alvo.</p>
+                            <i class="formula" id="desest">UTs desestabilizado = dano causado*2UTs-VIG</i>
+                            <p>Um membro desestabilizado não pode ser usado pela duração.</p>
+                            <p>O torso não pode ser desestabilizado. Ao invés disso, o alvo perde parte de seu fôlego total e faz um teste de FOR para tentar não ser empurrado. O peso de armas implica em empurrada adicional, implicando que qualquer arma pode aplicar empurrada. Porém armas concussivas aplicam o dobro de empurrada.</p>
+                            <i class="formula" id="conc-empurrada">Empurrada = peso_arma(kg) * 25cm * (dano*4 - FOR - Tamanho_alvo)</i>
+                            <i class="formula" id="conc-folego">Fôlego perdido = Empurrada(cm)/25</i>
+                            <p>Uma pessoa em movimento que é empurrada na mesma direção em que se move tem a empurrada multiplicada pela velocidade relativa do alvo em relação ao atacante. Caso esteja se movendo na direção contrária do ataque, cada 25cm de empurrada diminuem a velocidade em 0.5 m/UT.</p>
+                            <p>Ao atingir um ponto de apoio com dano concussivo (Ex: perna), o cálculo de empurrada é igual ao do torso, porém independente da empurrada, se for maior que <i>30cm*tamanho</i>, então a pessoa é derrubada, e não é empurrada. Se não derrubar a pessoa, para cada 10cm de empurrada, o alvo fica <i>0.4 UTs</i> desbalanceado, recebendo uma penalidade de -3 em testes contra empurradas e na Esquiva.</p>
+                        </ul>
+                </ul>
+        </ul>
+    <h3 id="weap">Armas</h3>
+        <p>Para manusear uma Arma corpo-a-corpo, deve-se ter FOR igual ou maior que o peso da arma -1. Caso o peso-1 exceda FOR, para cada quilo, subtraia um dado da rolagem. Após isso, caso sobre cerca de 1/2 quilo, ao invés de subtrair mais 1 dado, considere que o primeiro dado das rolagens de ataque com aquela arma só obtém sucesso num 10.</p>
+        <p>Armas podem colidir em combate e causar dano umas as outras. Se armas colidem num ataque um contra a outra, as duas levam o dano inteiro que a outra causaria. O peso de uma arma implica apenas em empurrada adicional.</p>
+        <p>Salvo exceções, armas são de aço, logo tem RD/Durabilidade = 3. A Estrutura de uma arma é o quanto ela aguenta de dano antes de quebrar. A Estrutura de se trata da Durabilidade + Tamanho, e é dobrada caso a arma seja concussiva. Quando uma arma tem mais dano sofrido do que tem de Durabilidade, o uso dela implica numa penalidade de -1.</p>
+        <table>
+            <tr class="primeira"><td colspan="6">Armas Corpo-a-Corpo</td></tr>
+            <tr class="primeira"><td>Arma</td><td>Peso</td><td>Dano</td><td>Iniciativa</td><td>Tamanho</td><td>Especial</td></tr>
+            <tr><td>Adaga</td><td>0.5</td><td>1</td><td>0</td><td>1</td><td>Aerodinâmico, Alvo Único, Finesse</td></tr>
+            <tr><td>Machadinho</td><td>0.5</td><td>1</td><td>0</td><td>1</td><td>Aerodinâmico, Alvo Único</td></tr>
+            <tr><td>Chicote</td><td>1.5</td><td>0</td><td>-2</td><td>2</td><td>Alcance, Alvo Único, Finesse</td></tr>
+            <tr><td>Rapieira</td><td>1</td><td>2</td><td>-1</td><td>3</td><td>Alvo Único, Finesse, Frágil</td></tr>
+            <tr><td>Foice</td><td>2.5</td><td>3</td><td>-4</td><td>5</td><td>Finesse, Varrer, Frágil</td></tr>
+            <tr><td>Espada Curta</td><td>2</td><td>1</td><td>-2</td><td>2</td><td>Varrer</td></tr>
+            <tr><td>Peixeira</td><td>1</td><td>2</td><td>-2</td><td>2</td><td>/</td></tr>
+            <tr><td>Espada Longa</td><td>3</td><td>3</td><td>-4</td><td>4</td><td>Alcance, Varrer</td></tr>
+            <tr><td>Machado</td><td>4</td><td>3</td><td>-3</td><td>3</td><td>/</td></tr>
+            <tr><td>Porrete</td><td>1</td><td>1</td><td>-1</td><td>2</td><td>Madeira</td></tr>
+            <tr><td>Cajado</td><td>1.5</td><td>1</td><td>-2</td><td>4</td><td>Alcance, Madeira</td></tr>
+            <tr><td>Maça</td><td>2</td><td>2</td><td>-3</td><td>2</td><td>Madeira</td></tr>
+            <tr><td>Mangual</td><td>2</td><td>2</td><td>-4</td><td>3</td><td>Alcance</td></tr>
+            <tr><td>Martelo</td><td>1.5</td><td>1</td><td>-2</td><td>1</td><td>/</td></tr>
+            <tr><td>Picareta</td><td>4</td><td>2</td><td>-3</td><td>3</td><td>Alvo Único</td></tr>
+            <tr><td>Malho</td><td>5</td><td>3</td><td>-4</td><td>4</td><td>Varrer</td></tr>
+            <tr><td>Javelin</td><td>1</td><td>1</td><td>-1</td><td>2</td><td>Aerodinâmico, Frágil, Alvo Único</td></tr>
+            <tr><td>Lança</td><td>1.5</td><td>2</td><td>-2</td><td>4</td><td>Alcance, Alvo Único, Madeira</td></tr>
+            <tr><td>Alabarda</td><td>6</td><td>4</td><td>-5</td><td>5</td><td>Alcance, Varrer</td></tr>
+            <tr><td>Escudo</td><td>3</td><td>0</td><td>-4</td><td>2</td><td>Madeira, Alvo Único</td></tr>
+        </table>
+        <table>
+            <tr class="primeira"><td colspan="6">Armas À Distância</td></tr>
+            <tr class="primeira"><td>Arma</td><td>Alcance</td><td>Dano</td><td>Iniciativa</td><td>Tamanho</td><td>Especial</td></tr>
+            <tr><td>Crossbow de mão</td><td>5</td><td>0</td><td>0</td><td>1</td><td>Munições variadas</td></tr>
+            <tr><td>Crossbow pesado</td><td>10</td><td>2</td><td>-4</td><td>3</td><td>Munições variadas</td></tr>
+            <tr><td>Arco Curto</td><td>12</td><td>1</td><td>-2</td><td>3</td><td>Munições variadas</td></tr>
+            <tr><td>Arco Longo</td><td>20</td><td>2</td><td>-3</td><td>4</td><td>Munições variadas</td></tr>
+            <tr><td>Estilingue</td><td>5</td><td>-1</td><td>-1</td><td>1</td><td>Dano concussivo</td></tr>
+            <tr><td>Zarabatana</td><td>7</td><td>-2</td><td>-1</td><td>1</td><td>Munições variadas</td></tr>
+            <tr><td>Rede</td><td>3</td><td>/</td><td>-5</td><td>2</td><td>Restringe o alvo sem machucar</td></tr>
+            <tr class="primeira"><td colspan="6">Armas de Fogo</td></tr>
+            <tr><td>Revolver .38</td><td>7</td><td>1</td><td>-1</td><td>1</td><td>/</td></tr>
+            <tr><td>Revolver .44</td><td>11</td><td>2</td><td>-2</td><td>1</td><td>/</td></tr>
+            <tr><td>Pistola 9mm</td><td>7</td><td>1</td><td>-1</td><td>1</td><td>/</td></tr>
+            <tr><td>Pistola .45</td><td>9</td><td>2</td><td>-2</td><td>1</td><td>/</td></tr>
+            <tr><td>SMG pequena</td><td>8</td><td>1</td><td>-2</td><td>1</td><td>Rajada</td></tr>
+            <tr><td>SMG larga</td><td>15</td><td>2</td><td>-3</td><td>2</td><td>Rajada</td></tr>
+            <tr><td>Rifle</td><td>60</td><td>4</td><td>-5</td><td>3</td><td>/</td></tr>
+            <tr><td>Rifle de Assalto</td><td>45</td><td>3</td><td>-3</td><td>3</td><td>Rajada</td></tr>
+            <tr><td>Espingarda</td><td>5</td><td>3</td><td>-4</td><td>2</td><td>Bônus por estar próximo</td></tr>
+        </table>
+
+        <p>Abaixo, especificações sobre as armas e seus tipos.</p>
+        <h4>Armas Corpo-a-corpo</h4>
+        <ul>
+            <li>
+                <h5>Peso</h5>
+                <p>Armas podem ser mais pesadas que o descrito. Nesse caso, para cada 1.5 quilos a mais, adicione 1 de dano à arma.</p>
+            </li>
+            <li>
+                <h5>Chicote</h5>
+                <p>Para cálculos de dano ao chicote, ele tem uma Durabilidade de 2, e um tamanho de 5. Ele também pode ser usado para agarrar um alvo dentro do alcance de 3m usando DEX+Briga. Porém em testes subsequentes, deve-se usar FOR.</p>
+            </li>
+            <li>
+                <h5>Aerodinâmico</h5>
+                <p>Armas Aerodinâmicas têm seu alcance dobrado quando usadas para arremesso.</p>
+            </li>
+            <li>
+                <h5>Alvo Único</h5>
+                <p>Implica que a arma não pode ser usada para fazer um ataque de Varredura.</p>
+            </li>
+            <li>
+                <h5>Finesse</h5>
+                <p>O usuário pode aplicar DEX no teste de ataque ao invés de FOR.</p>
+            </li>
+            <li>
+                <h5>Alcance</h5>
+                <p>A arma tem um alcance de 3 metros (o alcance normal é 1.5m).</p>
+            </li>
+            <li>
+                <h5>Frágil</h5>
+                <p>A durabilidade da arma é igual a 1.</p>
+            </li>
+            <li>
+                <h5>Varrer</h5>
+                <p>Ao usar o ataque de Varredura com a arma, o ataque não cessa no primeiro contato. Faça um teste de ataque para cada pessoa envolvida na Varredura, com uma penalidade de -1 para cada pessoa subsequente, e aplique um modificador de -1 aos ataques(Ex: uma Varredura com 3 pessoas como alvb, o primeiro teste tem uma penalidade de -1, o segundo de -2, e o terceiro de -3).</p>
+            </li>
+            <li>
+                <h5>Madeira</h5>
+                <p>Essas armas podem ser de madeira também. Nesse caso, use metade do peso e subtraia 2 do dano indicado. Com exceção da Lança, que caso a ponta permaneça de Aço, não penalize o dano.</p>
+            </li>
+        </ul>
+
+        <h4>Armas À Distância e de Fogo</h4>
+        <ul>
+            <li>
+                <h5>Flechas</h5>
+                <p>Armas que usam flechas precisam ser recarregadas a cada disparo. Recarregar uma flecha num arco curto leva 3UTs, num arco longo, 6UTs. Recarregar um crossbow de mão leva 6UTs, e um crossbow pesado, 12UTs.</p>
+                <p>Para toda arma à distância que usa flechas, o material da flecha impacta no ataque. Flechas de ferro implicam em uma diminuição no alcance em 33% e em +1 no dano. Flechas de madeira podem ter fogo em suas pontas, implicando em +1 no dano. Flechas podem ser envenenadas.</p>
+            </li>
+            <li>
+                <h5>Estilingue</h5>
+                <p>Por mais que seja uma arma à distância, causa dano concussivo. A munição pode ser uma pedra de tamanho ideal, ou uma esfera de aço. A pedra causa dano contundente, e a esfera causa dano letal.</p>
+            </li>
+            <li>
+                <h5>Zarabatana</h5>
+                <p>É mais usada para envenenar alvos, porém, com uma mira boa, não se faz necessário. Ignore a penalidade de -2 no dano caso acerte a cabeça. Dardos podem ser envenenados. Dardos de ferro podem ser usados, implicando em uma diminuição de 33% no alcance e +1 no dano.</p>
+            </li>
+            <li>
+                <h5>Rede</h5>
+                <p>Se o número de acertos for maior que o tamanho do alvo, ela adquire a condição de Restringida, e só sai se a Rede for danificada ou se conseguir se desvencilhar da Rede por meio de um teste de FOR CD 3. A rede, aberta, tem Durabilidade 2 e Tamanho 6.</p>
+            </li>
+            <li>
+                <h5>Rajada</h5>
+                <p>Armas com Rajada podem fazer disparos contínuos. Nesse caso, utilize a taxa de disparo como 1 tiro a cada meia UT. Coice se aplica, porém o mínimo de dados que se pode ter ao atirar se torna 1.</p>
+            </li>
+            <li>
+                <h5>Espingarda</h5>
+                <p>Rolagens de ataque com a espingarda se beneficiam de 8-Again no alcance curto, e 9-Again no alcance médio.</p>
+            </li>
+        </ul>
+
+
+    <h3>Armaduras</h3>
+        <p>Armaduras podem ser usadas para reduzir danos sofridos. A RD/Durabilidade das Armaduras não depende somente de seu material, então a Durabilidade de cada Armadura está especificada aqui. Considere que o Tamanho de um capacete é 1, de um peitoral é 3, de braçadeiras é 2, e de armadura pras pernas é 3. O Peso de uma peça é o Peso descrito na tabela multiplicado pelo Tamanho. Metade do peso das braçadeiras é somado ao peso de objetos e armas manuseadas.</p>
+        <table>
+            <tr class="primeira"><td>Armadura</td><td>RD</td><td>Peso</td></tr>
+            <tr><td>Couro</td><td>1</td><td>0.25</td></tr>
+            <tr><td>Couro Batido</td><td>2</td><td>0.33</td></tr>
+            <tr><td>Anéis</td><td>3</td><td>0.8</td></tr>
+            <tr><td>Escamas</td><td>3</td><td>0.5</td></tr>
+            <tr><td>Placas de Aço</td><td>4</td><td>1</td></tr>
+            <tr><td>Armadura de Aço fechada</td><td>6</td><td>1.5</td></tr>
+        </table>
 
 </div>
 <div id="magia">
-    <h1>Magia</h1>
-        <p>Muitas coisas foram alteradas nas magias do RMG, se comparadas ao D&D 5e. Assuntos mais específicos foram separados em outros tópicos, porém os pontos mais genéricos sobre spellcasting se encontram aqui.</p>
-        <p>A forma como uma magia é lançada foi alterada. Para castar uma magia, agora é necessário rolar um teste para determinar o quão bem essa spell foi castada. O seu atributo de spellcasting e o seu bônus de proficiência são somados nesse valor.</p>
-        <p>Assim como no combate físico, os dados de dano não são mais rolados. Ao invés disso, multiplicamos o dano/cura médio/a da magia por um multiplicador que é obtido com o dado da magia. O teste de magia e o dano/cura finais determinados por:</p>
-        <i class="formula" id="spellcasting">Teste de magia = 🎲 + bônus proficiência + MOD spellcasting - 5</i>
-        <i class="formula" id="spellcasting">Dano/Cura = valor médio * Teste de Magia/10</i>
-        <h3>Classe de Dificuldade</h3>
-        <p>O resultado do teste de magia será utilizado como novo CD.</p>
-        <h3>Mana</h3>
-        <p>As magias utilizarão mana ao invés de slots. O tanto de mana que alguém recebe por nível é 4 para full casters, e 2 para outras classes com magia. O custo de mana das magias será igual a:</p>
+<h1>Magia</h1>
+    <p>O RMG adapta o sistema de magia de Mago, O Despertar. As principais alterações foram no tempo de conjuração, nas simpatias espacial e temporal, e na Imagem dos feitiços.</p>
+    <p>Para tornar uma magia em realidade é preciso imaginar o que a magia vai fazer primeiro, isto é, Imaginar a spell. O tempo que leva para Imaginar alguma spell depende do tipo de spell:</p>
+    <table>
+        <tr class="primeira"><td>Tipo</td><td>Tempo (UTs)</td></tr>
+        <tr><td>Clássica</td><td>3 + Nível da spell</td></tr>
+        <tr><td>Praxis</td><td>Nível da spell</td></tr>
+        <tr><td>Improvisada</td><td>3 + 2 * Nível da spell</td></tr>
+    </table>
+    <p>Após ter a imagem da magia formada, ela pode ser lançada como uma Ação Reflexiva, ou a conjuração pode ser atrasada indefinidamente. Caso uma spell seja atrasada, para manter a imagem da spell em mente, não se pode fazer nenhuma ação complexa. E caso seja necessário reimaginar parte do feitiço, gaste uma Ação Reflexiva.</p>
+
+    <h3>Fatores de um Feitiço</h3>
+        <p>Um feitiço envolve alguns fatores mecânicos que devem ser observados antes de sua conjuração. Na descrição de um feitiço é possível encontrar algumas palavras chave: <b>Potência, Duração, Escala</b>. Esses são os fatores de um feitiço. O que a Potência de um feitiço faz está descrita em cada feitiço. Agora a Duração, Resistência, e Escala, são mais genéricas.</p>
+        <p>Todo feitiço, por padrão, e usa os valores base de seus Fatores, com exceção de seu Fator Principal, que ao invés de ser 1, é igual ao nível da Arcana do conjurador. Há diversos meios de alterar os Fatores de seu feitiço: para subir um nível em Duração, Escala ou Potência, tome uma penalidade de -2 na conjuração para cada avanço, e para usar as tabelas avançadas de Escala e Duração, alterar o Alcance do feitiço, ou realizar outras mudanças, é necessário usar <b>Reach</b>.</p>
+        <ul>
+            <li>
+                <h5>Duração</h5>
+                <p>A Duração padrão de um feitiço é um turno, ou uma cena, caso um <b>Reach</b> seja usado. Para usar a duração indefinida, deve-se pagar 1 Reach adicional e 1 mana.</p>
+                <table>
+                    <tr class="primeira"><td>Nível</td><td>Padrão</td><td>Avançada</td></tr>
+                    <tr><td>1</td><td>1 turno</td><td>1 cena</td></tr>
+                    <tr><td>2</td><td>2 turnos</td><td>1 dia</td></tr>
+                    <tr><td>3</td><td>3 turnos</td><td>1 semana</td></tr>
+                    <tr><td>4</td><td>5 turnos</td><td>1 mês</td></tr>
+                    <tr><td>5</td><td>10 turnos</td><td>1 ano</td></tr>
+                    <tr><td>6</td><td>+10 turnos</td><td>Indefinidamente</td></tr>
+                </table>
+            </li>
+            <li>
+                <h5>Escala</h5>
+                <p>A Escala de um feitiço remete ao número de alvos, ou à área de efeito. Ao conjurar o feitiço, se escolhe se o feitiço será em um alvo ou em uma área alvo. O valor base é 1 alvo/Esfera 1m de raio, ou 5 alvos/Casa grande (~Esfera 5m de raio, ou um sobrado com 80m² em cima e em baixo) caso um <b>Reach</b> seja usado.</p>
+                <table>
+                    <tr class="primeira"><td>Nível</td><td>Alvos</td><td>Área</td></tr>
+                    <tr><td>1</td><td>1 alvo</td><td>1m raio</td></tr>
+                    <tr><td>2</td><td>2 alvos</td><td>Sala pequena</td></tr>
+                    <tr><td>3</td><td>4 alvos</td><td>Sala grande</td></tr>
+                    <tr><td>4</td><td>8 alvos</td><td>Várias salas, ou um andar.</td></tr>
+                    <tr><td>5</td><td>16 alvos</td><td>Uma pequena casa</td></tr>
+                </table>
+                <table>
+                    <tr class="primeira"><td>Nível</td><td>Alvos</td><td>Área</td></tr>
+                    <tr><td>1</td><td>5 alvos</td><td>Casa grande</td></tr>
+                    <tr><td>2</td><td>10 alvos</td><td>Estacionamento</td></tr>
+                    <tr><td>3</td><td>20 alvos</td><td>Supermercado</td></tr>
+                    <tr><td>4</td><td>40 alvos</td><td>Shopping</td></tr>
+                    <tr><td>4</td><td>80 alvos</td><td>Quarteirão</td></tr>
+                    <tr><td>5</td><td>160 alvos</td><td>Um bairro pequeno</td></tr>
+                </table>
+            </li>
+            <li>
+                <h5>Reach</h5>
+                <p>Reach é como se fosse uma moeda que pode ser usada, em cada conjuração, para comprar modificações para seu feitiço. Ao conjurar um feitiço, você pode gastar um número de Reaches igual ao excesso entre sua Arcana e o feitiço conjurado. Por exemplo, um Mago com 3 em Vida, conjurando um feitiço de nível 1, tem direito a aplicar 2 Reaches. Todas modificações a seguir custam 1 Reach:</p></br>
+                <ul>
+                    <li>Usar Duração Avançada</li>
+                    <li>Usar Escala Avançada</li>
+                    <li>Alterar o Alcance para 'Sensorial'</li>
+                    <li>Alterar o Fator Principal do feitiço</li>
+                    <li>Alterar o Alcance para 'Remoto'</li>
+                    <li>Aumentar a Resistência do feitiço contra dissipação</li>
+                    <li>Controlar um feitiço além do limite permitido</li>
+                </ul>
+            </li>
+            <li>
+                <h5>Resistência</h5>
+                <p>A Resistência aparece na descrição de feitiços que envolvem alguém como alvo. A Potência do feitiço é diminuida pelo atributo de Resistência do alvo, diminuindo a efetividade do feitiço.</p>
+            </li>
+            <li>
+                <h5>Alcance</h5>
+                <p>Por padrão</p>
+            </li>
+        </ul>
+    <h3>Mana</h3>
+        <p>O custo de um feitiço é igual ao nível dele. A Mana máxima de alguém é 6+4*Gnose. O limite de mana que pode ser gasto dentro de 10UTs é igual a 2*Gnose, potencialmente aumentando o tempo para conjurar feitiços que gastam mais mana do que o possível.</p>
+        <p>Como uma ação Reflexiva, é possível converter 1 FdV em 1 Mana. Fora isso, sempre que um feitiço obtém um sucesso excepcional, sua conjuradora recupera a Mana gasta no feitiço + Gnose/2 (arredondar p/ cima).</p>
+        <p>Outra maneira de obter Mana é através de Purgamento. Purgar significa danificar sua carne para obter sua essência. O conjurador pode auto infligir (como uma ação Padrão) 1 de redução em um atributo físico (VIG, FOR, ou DEX) por 24h, ou até machucar a si mesmo com 1 de dano letal resistente. Caso consiga, recebe 3 de mana. A Gnose limita quantas vezes isso pode ser usado por dia.</p>
+    <h3>Paradoxo</h3>
+        <p>É possível comprar mais Reaches do que o permitido pelo nível da Arcana. Fazendo isso, para cada Reach adicional, o feitiço ganha Gnose/2 (arredondar pra cima) níveis de Paradoxo. Caso o feitiço tenha sido conjurado com a ferramenta principal do conjurador, reduza os níveis de Paradoxo em 2. Também é possível pagar 1 Mana para reduzir 1 nível de Paradoxo.</p>
+        <p>Após as modificações ao nível de Paradoxo, faça uma rolagem. Cada nível é 1 dado. Um sucesso numa rolagem de Paradoxo implica que a conjuração afetou a realidade de uma maneira forçada, causando anomalias. O mestre usa os sucessos dessa rolagem para aplicar mudanças ao feitiço:</p>
         <table>
-            <tr><td class="primeira">Círculo</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
-            <tr><td class="primeira">Custo</td><td>0.5</td><td>2</td><td>3</td><td>5</td><td>6</td><td>7</td><td>9</td><td>10</td><td>11</td><td>13</td></tr>
+            <tr class="primeira"><td>Custo</td><td>Efeito</td></tr>
+            <tr><td>1 Sucesso</td><td>Desfazer 1 Reach do feitiço, ou aplicar um novo.</td></tr>
+            <tr><td>1 Sucesso</td><td>Impor uma Condição Paradoxal no conjurador</td></tr>
+            <tr><td>2 Sucessos</td><td>Mudar o(s) Alvo(s) do feitiço</td></tr>
+            <tr><td>3 Sucessos</td><td>Criar uma Alteração Ambiental Abissal</td></tr>
+            <tr><td>5 Sucessos</td><td>Invocar um Abissal de Rank 2. Mais Sucessos aumentam o Rank</td></tr>
         </table>
-        <p>Após muita experiência e familiaridade com spells mais complicadas, um caster aprende fazer magias mais básicas sem usar mana, então a cada segundo círculo de magia aprendido, o custo, em mana, de todas as spells que ele consegue castar é reduzido em um valor 0.5</p>
-        <h3 id="casting-time">Tempo de casting</h3>
-        <p>O tempo de casting das magias conhecidas há mais tempo será reduzido conforme a tabela:</p>
-        <table>
-            <tr class="primeira"><td>círculo máx. aprendido</td><td colspan="10">UTs necessárias p/ castar magia</td></tr>
-            <tr><td class="primeira">1</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">2</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">3</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">4</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">5</td><td>4.5</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">6</td><td>4.2</td><td>4.5</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">7</td><td>3.9</td><td>4.2</td><td>4.5</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td><td>-</td></tr>
-            <tr><td class="primeira">8</td><td>3.6</td><td>3.9</td><td>4.2</td><td>4.5</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td><td>-</td></tr>
-            <tr><td class="primeira">9</td><td>3.3</td><td>3.6</td><td>3.9</td><td>4.2</td><td>4.5</td><td>4.8</td><td>5.1</td><td>5.4</td><td>5.7</td><td>6</td></tr>
-            <tr><td class="primeira">círculo</td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
-        </table>
-        <h3 id="upcasting">Alterar valores base da magia</h3>
-            <p>Ao aprender uma magia, é possível remanejar os valores base dela (use porcentagens). Nenhum valor pode ser aumentado ou diminuido para além de 50%. Depois dessa mudança, os valores base da magia se tornam esses novos valores.</p>
-
-            <p>Alguns atributos que não aparecem numericamente em magias também podem ser alterados, como o formato da magia. Nesse caso, utilize o volume do efeito, e não uma das dimensões.</p>
-
-            <p>Para esse fim, o teste de magia é considerado um valor base. Você pode se dar um bônus de +3 no teste se diminuir algum outro valor base da magia em 33%. O inverso também é possível.</p>
-
-            <p>Alterar valores bases da magia no casting dela é muito semelhante com o casting em níveis mais altos no D&D 5e, porém aqui, no RMG, se ignora a seção nas magias que especifica o que acontece se a magia é castada usando círculos de nível mais alto.
-
-            Há 2 maneiras de alterar os valores base de uma magia no casting dela, e essas maneiras podem ser usadas simultaneamente: remanejamento e upcasting.
-            </p>
-            <h4>Remanejamento</h4>
-                <p>Você pode remanejar X% de um atributo base para aumentar outro na mesma porcentagem. Esse X tem um valor máximo base de 20%, porém para cada círculo que você conseguiria upcastar essa magia esse limite aumenta em 10%. Você pode ultrapassar esse limite, mas para cada 5% que ele é ultrapassado, subtraia 1 do seu teste de magia.</p>
-            <h4>Upcasting</h4>
-                <p>Para cada nível em que uma magia for castada além do seu nível original, algum atributo da magia (qualquer número, ou atributo que possa ser aumentado, que apareça na descrição da magia) é aumentado em 33.33% do valor base. Isso possibilita, que, por exemplo. ao fazer o upcast de <i href="http://dnd5e.wikidot.com/spell:goodberry">goodberry</i> em 1 nível seja possível aumentar 1 desses em 33.33%:</p>
-                <ul>
-                    <li>a quantidade de frutas resultantes da magia</li>
-                    <li>a quantidade de HP recebida por cada fruta</li>
-                    <li>o número de dias que a fruta vai satisfazer quem consumi-la</li>
-                    <li>a duração da fruta antes da magia expirar</li>
-                </ul>
-                <p>Pros números inteiros, como por ex o número de frutas, o número é sempre arredondado pra cima a partir de 0,5 (não incluso). Então no caso da pessoa upar a spell acima em 1 nível, e decidir aumentar o número de frutas, vai dar 13.33, que é arredondado pra 13. Mas se fosse upada em 2 níveis, daria 16.66, que seria arredondado para 17. Entretanto dependendo do contexto, é possível quebrar o número em uma unidade de medida mais precisa, por ex, se for aumentar a eficácia da alimentação da fruta (padrão 1 dia), utilize 24 horas como unidade de medida, e não 1 dia.</p>
-                <p>Lista de magias que não podem ser upcasted:</p>
-                <ul>
-                    <li></li>
-                </ul>
-            <h4>Casting em níveis mais baixos</h4>
-                <p>É possível castar uma magia de um círculo que não se conhece ainda. Você deve um dos requisitos para isso:</p>
-                <ul>
-                    <li>Você tem a magia desejada em um grimório.</li>
-                    <li>Nos próximos níveis você vai, necessariamente, aprender essa magia. Ex: você é um druida e sempre sabe todas as magias.</li>
-                    <li>Alguém te ensinou a magia antes da hora.</li>
-                </ul>
-                <p>Caso conheça essa magia de círculo mais alto, para cada nível em que uma magia for castada abaixo do seu nível original, todos atributos bons da magia são diminuídos em 33.33% do valor base, e os ruins são aumentados em 33%.</p>
-                <p>Lista de magias que não podem ser downcasted:</p>
-                <ul>
-                    <li></li>
-                </ul>
-        <h3>Cantrips</h3>
-            <p>Deve-se ignorar o aumento de dano normal das cantrips. Agora são tratadas como spells de nível 0, podendo ser castadas como magias de nível maior.</p>
-        <h3>Magias revisitadas</h3>
-            <ul>
-                <li>Acid Splash (AOE, ao invés de 1 ou 2 alvos)</li>
-                <li>bane</li>
-                <li>bless</li>
-                <li>aid</li>
-                <li>shield</li>
-                <li>mage armor</li>
-                <li>enlarge/ reduce</li>
-            </ul>
+        <p>Condições Paradoxais:</p>
+        <ul>
+            <li>
+                <h5>Rebote Abissal</h5>
+                    <p>Os feitiços da conjuradora ficam ainda mais suscetíveis à Paradoxo. Quando o Mago conjura um feitiço, adicione níveis de Paradoxo igual ao número de sucessos que criou essa Condição.</p>
+            </li>
+            <li>
+                <h5>Abismo Interior</h5>
+                    <p>A conjuradora fica presa dentro de si mesma. Todos os feitiços conjurados por ela sempre têm ela mesmo como alvo, inevitavelmente(e mais nenhum outro alvo).</p>
+            </li>
+            <li>
+                <h5>Incompreensão Abissal</h5>
+                    <p>Os feitiços conjurados pelo Mago tem suas imagens altamente deturpadas pelo Abissal. Quando for conjurar um feitiço, role 1d10 para determinar a Arcana, e escolha uma Arcana aleatória de mesmo nível da Arcana original. Use os mesmos Fatores do feitiço.</p>
+            </li>
+            <li>
+                <h5>Abismo Existencial</h5>
+                    <p>Toda vez que um feitiço for conjurado, a conjuradora perde 1 FdV. Caso não tenha mais, ganha 3 níveis de paradoxo nessa conjuração.</p>
+            </li>
+        </ul>
 </div>
 <div id="xplor">
-    <h1>Exploração</h1>
-        <h3>Incentivos</h3>
-            <p>Julgando a sessão 'ideais' da ficha de um personagem, o mestre pode dar pontos de incentivo para um personagem dado uma determinada situação. Por exemplo, se um personagem tem um interesse grande em obter dinheiro ou coisas valiosas, o mestre pode dar pontos de incentivo pra ele toda vez que ele se deparar com uma situação tentadora, incentivando o jogador viver os ideais do personagem dele. Com isso em mente, preencha essa parte da ficha com coisas que o personagem tem muito interesse (pode ser qualquer coisa, de coisas como salvar o mundo a apenas comer uma goiaba).</p>
-        <h3>Descansos e recuperação</h3>
-            <p>Criaturas naturalmente recuperam 5%HP e 5% de sua mana por hora. Em descansos, a taxa de HP duplica, mas até um limite de 60% de recuperação por descanso longo.</p>  
-            <p>Durante descansos, uma criatura pode meditar por 1h p/ recuperar 25% de sua mana máxima. Lembrando que em um descanso longo, 6h devem ser de <b>sono</b>.</p>
-    <h1>Level Up</h1>
-        <h3>Aumento de atributo</h3>
-            <p>O máximo que uma criatura pode ter num atributo no nível 1, é 18. Esse valor limite aumenta 1 no nível 5, e a cada 3 níveis depois desse: 8, 11, 14, 17, 20.</p>
+<h1>Exploração</h1>
+    <h3>Experiência</h3>
+        <p>Pontos de experiência não são adquiridos de uma vez, mas sim em pedaços. Tanto a experiência normal quanto a experiência arcana é obtida em Beats. Quando se obtém 5 Beats, um ponto de experiência do tipo correspondente é adquirida.</p>
+        <p>Beats são obtidos com... experiência. Quando se é obtido um sucesso excepcional (5 sucessos em um teste), uma Beat é premiada. Caso seja um teste envolvendo Magia, uma Beat Arcana é premiada no lugar.</p>
+        <p>Experiência pode ser gasta conforme a tabela:</p>
+        <table>
+            <tr class="primeira"><td>Trato</td><td>Custo</td></tr>
+            <tr><td>Atributo</td><td>4</td></tr>
+            <tr><td>Habilidade</td><td>2</td></tr>
+            <tr><td>Arcana</td><td>4</td></tr>
+            <tr><td>Gnose</td><td>5</td></tr>
+            <tr><td>Afinidade</td><td>16</td></tr>
+            <tr><td>Clássico</td><td>1</td></tr>
+            <tr><td>Praxis</td><td>1</td></tr>
+            <tr><td>FdV (refill)</td><td>1</td></tr>
+            <tr><td>FdV (limite)</td><td>3</td></tr>
+            <tr><td>Talento</td><td>6</td></tr>
+            <tr><td>Especialidade</td><td>1</td></tr>
+        </table>
+        <p>Detalhes:</p>
+        <ul>
+            <li>
+                <h5>Limites</h5>
+                    <p>Para comprar pontos em algo além do limite máximo, gaste 50% a mais de Experiência. E para comprar pontos além do dobro do limite máximo, gaste o dobro de Experiência.</p>
+                    <p>O máximo que alguém pode ter num atributo é 5, com exceção de FOR, a o limite é o Tamanho da pessoa, e Gnose, a qual o limite é 10. O limite dos atributos comuns aumenta em 1 para cada nível de Gnose obtido além do 5°.</p>
+                    <p>O limite de uma Arcana é definido pela Gnose da conjuradora: Gnose*2. Pontos obtidos numa Arcana além do 5° fornecem um bônus de 2 à essa Arcana e +2 Reaches por feitiço.</p>
+            </li>
+            <li>
+                <h5>Habilidade</h5>
+                    <p>Seu limite é 4.</p>
+            </li>
+            <li>
+                <h5>Afinidade</h5>
+                    <p>Escolha um conjunto de atributos (uma coluna ou uma linha), da tabela de atributos, ou, uma Arcana, e obtenha afinidade nessa Arcana ou nesse conjunto de atributos. Essa compra também te fornece um ponto na Arcana escolhida ou um ponto em um dos atributos do grupo escolhido. Comprar pontos em atributos/arcanas que você tem afinidade custa 50% a menos. Talentos e Feitiços da área com afinidade têm seu custo de uso zerado.</p>
+            </li>
+            <li>
+                <h5>Especialidade</h5>
+                    <p>Uma Especialidade é relativa a uma Habilidade. Por exemplo alguém pode ser uma especialidade em Acampar, referente à Habilidade de Sobrevivência. Nesse caso, rolagens que se beneficiem desse conhecimento específico em Acampar ganham 1 sucesso a mais.</p>
+            </li>
+        </ul>
+    <h3>Talentos</h3>
+        <p>Como visto na tabela, Talentos são possíveis de adquirir com Experiência. Eles têm um atributo associados a eles, sendo então afetados por Afinidade com esses atributos.</p>
+        <ul>
+            <li>
+                <h5>Inteligência</h5>
+                    <p>Gaste 1 Mana para adicionar Inteligência a qualquer rolagem. Caso a rolagêm já use inteligência, adicione 1 sucesso.</p>
+            </li>
+            <li>
+                <h5>Raciocínio</h5>
+                    <p>Você não pode ser surpreso enquanto estiver consciente. Você soma 3 aos seus testes de iniciativa. Você ainda aplica sua Esquiva, mesmo que não esteja ciente de um ataque iminente.</p>
+            </li>
+            <li>
+                <h5>Determinação</h5>
+                    <p>Como uma ação padrão, role DET. Ganha 1 força de vontade por sucesso, que expira no fim da cena. Só pode ser feito 1 vez por cena.</p>
+            </li>
+            <li>
+                <h5>Força</h5>
+                    <p>Testes de FOR ganham +1 sucesso (sempre).</p>
+            </li>
+            <li>
+                <h5>Destreza</h5>
+                    <p>Ações não físicas levam DEX*7% a menos de tempo para serem completadas. Limite de 50%.</p>
+            </li>
+            <li>
+                <h5>Vigor</h5>
+                    <p>Como uma ação padrão, role VIG. Se obter 1 sucesso, perde o 1° nível de cansaço e recupera o Fôlego. Se obter 3 sucessos, perde os 2 primeiros níveis de cansaço, recupera o Fôlego, e ganha 1 PSC por sucesso além do 3° (expiram no final da cena). Só pode ser feito 1 vez por cena.</p>
+            </li>
+            <li>
+                <h5>Presença</h5>
+                    <p>Gaste 1 Mana para re-rolar dados ao fazer uma rolagem direcionada a alguém que te vê/sente. N° de dados a serem re-rolados: N° de sucessos numa rolagem de PRE+Intimidação/PRE+Presença.</p>
+            </li>
+            <li>
+                <h5>Manipulação</h5>
+                    <p>Ganha um desconto de MAN*10% em lojas (limite 70%), e só gasta metade do tempo para tomar ações de persuasão, intimidação, e outras envolvendo manipulação.</p>
+            </li>
+            <li>
+                <h5>Autocontrole</h5>
+                    <p>Como uma ação padrão, role autocontrole. Ganha 1 ponto de mana por sucesso, que expiram no fim da cena. Só pode ser efito 1 vez por cena.</p>
+            </li>
+        </ul>
+    <h3>Obsessões</h3>
+        <p>Pessoas têm obsessões. Magos, quando satisfazem suas obsessões, recebem 1 Mana e 1 Beat Arcano</p>
+    <h3>Recuperação</h3>
+        <p>Os danos sofridos somem com o tempo, dado a regeneração natural dos corpos. Os danos mais antigos recuperam primeiro. Os danos recuperam nas seguintes taxas:</p>
+        <table>
+            <tr class="primeira"><td>Tipo do Dano</td><td>Taxa</td></tr>
+            <tr><td>Contundente</td><td>15 minutos</td></tr>
+            <tr><td>Letal</td><td>2 dias</td></tr>
+            <tr><td>Agravado</td><td>1 semana</td></tr>
+        </table>
+        <p>Os tempos só começam a contar a partir do momento em que a pessoa inicia um Descanso.</p>
+    <h3>Descansos</h3>
+        <p>Um Descanso é caracterizado por um momento sem atividades físicas e nem atividades mentais muito difíceis. Conversar sobre assuntos mundanos, Meditar, assistir um filme, fazer nada, e dormir, por pelo menos 1 hora, são descansos válidos. No início de um Descanso, inicie o tempo de Recuperação de feridas. No fim de um Descanso em que não se dorme, multiplique o tempo de cura das feridas por 1.25, até o início do próximo Descanso. Durante um Descanso em que se está dormindo, utilize metade do tempo para curar feridas.</p>
+        <p>Independente de Descansos feitos, todos devem dormir por 8h todos os dias, ou recebem 1 cansaço.</p>
+        <p>Em Descansos de pelo menos 1h, recupera os 2 primeiros cansaços. Em um Descanso completo, recupera os 3 primeiros cansaços, e 1 cansaço de qualquer nível. Perceba que se você obter 5 níveis de cansaço, uma noite longa de sono não vai remover todos os níveis.</p>
+        <p>Descansos completos também recuperam 1 FdV.</p>
+</div>
+<div id="cria">
+<h1>Criação de Personagem</h1>
+    <p>Para criar um personagem dentro do sistema de RMG, após ter, de maneira bem clara, o conceito do personagem, os pontos fortes e fracos dele, e o que ele sabe fazer, distribua pontos nos atributos do personagem conforme a ordem: entre os grupos MENTAL, FÍSICO, e SOCIAL, ordene-os do mais prioritário ao menos prioritário. Os seus atributos tem a pontuação inicial de 1 ponto. Baseado na ordenação, distribua 5 pontos aos atributos prioritários, 4 pontos pros atributos médios, e 3 pontos aos menos prioritários. Finalmente, adicione 1 ponto de resistência a um atributo de resistência qualquer. Para escolher as habilidades de seu personagem, de acordo com a priorização feita anteriormente, distribua 11 pontos ao conjunto das habilidades mais prioritárias, 7 ao das médias, e 4 ao das menos prioritárias.</p>
+    <p>No início de uma aventura o mestre irá fornecer pontos de experiência iniciais para que os personagens não iniciem tão mundanos. Recomenda-se que o mínimo inicial sejam 15 Exp, porém isso fica a critério do mestre. Para ter mais Exp inicialmente, é possível “vender” seus atributos, habilidades, e especialidades por metade do custo dessas (Ex: vender 1 ponto de atributo dá 2 de Exp a mais). Isso só pode ser feito na criação do personagem.</p>
+    <p>Os atributos de uma personagem definem alguns valores dela:</p>
+    <ul>
+        <li>PV: VIG + Tamanho</li>
+        <li>Força de Vontade(máxima): PER + AUT</li>
+        <li>Esquiva: RAC + DEX</li>
+        <li>Iniciativa: ESQ + AUT</li>
+    </ul>
+    <h3>Espécies</h3>
+        <p>No cenário de RMG, há 6 espécies que predominam o continente principal. Dessas, 3 são espécies livres para escolher, e 3 espécies são menos comum, e necessitam de sorte nos dados para conseguir jogar com elas, ou que o mestre dê seu aval. As 3 primeiras espécies são as livres.</p>
+        <ul>
+            <li>
+                <h5>Humano</h5>
+                <p>Você não tem nada de especial em relação às outras espécies. Seu tamanho base é 5, podendo ser 4 ou 6 também, ou 3 se for portador de nanismo.</p>
+            </li>
+            <li>
+                <h5>Gnomo</h5>
+                <p>Você é naturalmente mais engenhoso que as outras espécies. Ganha a qualidade de 8-again em rolagens de Ofícios na qual o objeto da sua ação seja alguma engenhoca. Seu limite de VIG é 4, e você tem 1 INT+. Seu tamanho base é 3, podendo ser 4.</p>
+            </li>
+            <li>
+                <h5>Goblins</h5>
+                <p>Você tem um interesse natural pelo extraordinário, pelo mágico, pelo que é incompreensível a princípio. Ganha 5 pontos para distribuir nas habilidades: Ciências, Informática, Investigação, Ocultismo, Ofícios, Artilharia, Condução, Astúcia. Seu limite de VIG é 3, e você tem 1 DEX+. Seu tamanho é 4, podendo ser 3. No cenário principal e contra criaturas não politizadas, Goblins têm desvantagem em testes de MAN(só se aplica contra não-Goblins).</p>
+            </li>
+            <li>
+                <h5>Glápios</h5>
+                <p>Glápios são Homens-Tartaruga, bípedes. São muito resistentes, muito calmos, e voltados para si mesmos. Glápios têm uma armadura natural a qual a RD é 1. Você tem 1 VIG+, seu limite de DEX é 4, e seu tamanho é 7, podendo ser 6 ou 8.</p>
+            </li>
+            <li>
+                <h5>Sipídios</h5>
+                <p>Sipídios são Homens-Lagarto ou Homens-Camaleão, o que for melhor de imaginar. Têm a cor de uma ametista. São esguios, têm um rabo saindo do cóccix do comprimento de um braço, porém mais fino que um. O controle sobre esse rabo é o mesmo controle que alguém tem sobre sua mão, porém respeitando a limitação de que o rabo não tem dedos. Sipídios podem adaptar suas escamas para que elas aparentem e deem uma sensação diferente da original, podendo imitar a pele de outras espécies, ou alguma outra da escolha deles. A alteração na pele não oculta muito bem as diferenças do formato do crânio.</p>
+                <p>Sipídios têm 1 AUT+, e +2 em Dissimulação e Empatia. Seu limite de VIG é 4, e de FOR é 3. Seu tamanho base é 5, podendo ser 4.</p>
+            </li>
+            <li>
+                <h5>Prens</h5>
+                <p>Prens têm a aparência dos, mais conhecidos, elfos negros. São naturalmente conectados com a magia. Prens têm 1 Gnose+, 1 PRE+. Porém, por sua origem obscura ser mágica, todos feitiços conjurados por Prens têm 1 nível de Paradoxo.</p>
+            </li>
+        </ul>
 </div>
 </body>

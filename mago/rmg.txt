@@ -1,0 +1,48 @@
+
+
+Áreas intactas:
+
+Equipamento (226-230)
+
+
+
+O que falta:
+criação de personagem
+	raças
+
+índice
+fontes
+
+
+Status:
+
+HP: Vigor + 5
+Força de Vontade: Perseverança + Autocontrole
+Esquiva: Raciocínio + Destreza
+Iniciativa: Destreza + Autocontrole
+
+TALENTOS
+
+Inteligência:
+De um jeito ou de outro: Gaste 1 PE para adicionar sua inteligência a qualquer rolagem.
+Raciocínio:
+Alerta: Você não pode ser surpreso enquanto estiver consciente. Você ganha um bônus de +5 a sua iniciativa. Você ainda aplica sua Esquiva, mesmo que não esteja ciente de um ataque iminente.
+Determinação:
+Resgate suas forças: Role determinação (CD 3). Se suceder, ganha 1 força de vontade, que expira no fim da cena. 
+Força:
+Quebra-quebra: Você tem vantagem em testes de agarrada, e pode quebrar ossos do alvo com mais facilidade.
+Destreza:
+Ligeiro: Diminui o tempo levado para tomar ações físicas em DEX*10% por DEX turnos.
+Vigor:
+Se sinta bem: Role vigor (CD 3). Se suceder, ganha 3PE, que expiram no fim da cena.
+Presença:
+Influência: Gaste 1 PE para re-rolar dados ao fazer uma rolagem direcionada a alguém que te vê/sente. Esse talento tem que ser declarado antes da rolagem. O jogador escolhe os dados que serão re-rolados após a rolagem normal. N° de dados a serem re-rolados: N° de sucessos numa rolagem de PRE+Intimidação/PRE+Presença.
+Manipulação:
+Lábia: Ganha um desconto de MAN*10% em lojas, e só gasta metade do tempo para tomar ações de persuasão, intimidação, e outras envolvendo manipulação.
+Autocontrole:
+Tudo, aqui dentro: Role autocontrole (CD 3). Se suceder, ganha 3 pontos de mana, que expiram no fim da cena. 
+
+
+
+
+MANOBRAS

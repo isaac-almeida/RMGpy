@@ -1,0 +1,16 @@
+Ghosts > remanescentes de humanos que morreram repentinamente. Grudados em Âncoras físicas
+Spirits > seres criados pela Ressonância
+Goetia > seres do mundo das ideias
+
+condições:
+Âncora > objeto/lugar/pessoa que mantém um fantasma aqui.
+Ressonante > O Ressonante está sujeito a Influência de espíritos e Goetia
+Open > O afetado pode ser possuído por uma entidade, ou ela pode afetá-lo de outras maneiras, como criar uma Gateway (permitindo o ir e vir dessa e de outras entidades por uma cena), ou a entidade pode se Materializar ali.
+Fettered > A entidade faz do alvo sua "casa" temporária. Influências no alvo custam 1 essência a menos. A entidade não pode afetar outras criaturas enquanto está "morando" em alguém.
+
+
+Ressonância se trata de algo temático. Exemplos: subterrâneo, Irado, Furioso. Hallows, muitas vezes, estão em cima de Linhas de Ressonância, as quais afetam a mana coletada nesse Hallow. Caso isso aconteça, quando essa mana for gastada em uma conjuração que combina com a Ressonância da mana obtida, a conjuradora ganha +1 dado na rolagem. Primórdio e Espírito manipulam Ressonâncias.
+
+
+Verge: um lugar mágico natural (ou não). Nesse lugar a Mentira é mais fraca, e fenômenos Supernais manifestam livremente ali. Um Verge tem suas Arcanas principais, assim como aqueles que despertaram. Feitiços dessas Arcanas conjurados dentro de um Verge podem contar com um Yantra ambiental de +2 dados, e feitiços dessas Arcanas não arriscam paradoxo, isto é, Reach infinito!! (a não ser que um Adormecido presencie efeitos óbvios do feitiço)
+Demesne > Verge artificial. Fenômenos Supernais não se manifestam livremente aqui! 

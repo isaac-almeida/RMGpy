@@ -1,8 +1,0 @@
-- regra genérica p alterar os valor base de uma magia:
-p cada nível que você pode upcastar essa magia, você pode diminuir 10% de um atributo dela e aumentar 10% do outro.
-
-- uma habilidade de ação bônus só pode ser usada novamente após 6UTs do fim de seu casting anterior
-
-- quando uma criatura faz um teste para se libertar de uma condição contínua (do tipo de condição que 1 vez por turno se pode repetir o teste), caso ela não passe no teste, ela tira o saldo do teste, multiplica por 2, e essa será a quantidade de UTs que ela deverá esperar para realizar o teste novamente.
-
-- Para castar uma spell de concentração, gaste apenas metade do custo da magia ao castá-la. Após castar, para cada 10% do tempo total da magia que você passa se concentrando nela, você gasta 1/5 do custo da magia, em mana.

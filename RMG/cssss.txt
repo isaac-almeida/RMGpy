@@ -1,0 +1,122 @@
+#status {
+  float: right;
+  width: 50%;
+  margin: 16px;
+  background-color: rgba(0, 255, 255, 0.171);
+}
+
+#status img{
+  float: left;
+  height: 50%;
+  width: 50%;
+  margin: 10px;
+}
+
+#nome {
+  margin-top: 5px;
+  
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family:monospace;
+}
+
+#titulo {
+  margin-top: -30px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#pv {
+  height: 20px;
+}
+
+#pv h3{
+  height: 20px;
+  margin-top: 0px;
+  margin-right: 15px;
+  float: left;
+}
+
+#barra_pv_inteira li {
+  height: 20px;
+  width: 3.5%;
+  float: left;
+  border-radius: 8px;
+  display: block;
+  margin: 0;
+}
+
+#barra_pv_inteira ul {
+  list-style-type: none;
+  height: 20px;
+}
+
+.saudável {
+  background-color: red;
+}
+
+.contundente {
+  background-color: rgb(165, 100, 1);
+}
+
+.letal {
+  background-color: rgb(39, 35, 241);
+}
+
+.agravado {
+  background-color: black;
+}
+
+#mana {
+  margin: 0;
+  margin-top: 10px;
+  height: 20px;
+}
+
+#mana h3 {
+  float:left;
+  margin-top: 0px;
+  margin-left: -45px;
+}
+
+
+#manabar{
+  margin-left: 15px;
+  width: 30%;
+  height: 20px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(0, 255, 255, 0.63);
+  display: block;
+  float: left;
+}
+
+#manabar div {
+  margin-left: 0px;
+  height: 18px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: rgba(17, 0, 255, 0.63);
+  display: block;
+  float: left;
+  
+  animation: mudaMana 5s forwards;
+
+  position: relative;
+
+  border: rgb(253, 252, 252) solid;
+  border-width: 1px;
+}
+
+/* @keyframes mudaMana{
+  from{
+      width: 0px;
+
+  }
+  to{
+      width: 98px;
+  }
+} */

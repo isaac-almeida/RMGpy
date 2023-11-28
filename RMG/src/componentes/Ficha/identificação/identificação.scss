@@ -1,0 +1,33 @@
+.identificação {
+    padding: 5px;
+    grid-column: span 2;
+    width: 99%;
+    display: flex;
+    .pfpContainer{
+        max-width: 120px;
+        padding: 3px;
+        margin-right: 4px;
+        border: 2px rgb(32, 32, 32) solid;
+        img{
+            border-radius: 10px;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .profTextContainer {
+        margin-top: -5px;
+        font-weight: bold;
+        .nome {
+            max-width: 180px; //ligado ao valor da fonte do Nome no componente Identificação
+            min-height: 42px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            
+        }
+        .titulo {
+            max-width: 240px;
+            font-style: italic;
+        }
+    }
+}

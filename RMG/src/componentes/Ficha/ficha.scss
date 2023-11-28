@@ -1,0 +1,19 @@
+.ficha {
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width: 385px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: rgb(32, 32, 32);
+    font-family: 'BhuTuka Expanded One', serif;
+    text-shadow: 1px 1px 1px #61480e;
+    font-weight: bolder;
+}
+
+.wrapper {
+    width: 400px;
+    background-image: url("jornal2.png");
+    background-size: 110% auto;
+    background-position: left -18px top -10px;
+}

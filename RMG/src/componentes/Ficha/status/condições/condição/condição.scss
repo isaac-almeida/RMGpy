@@ -1,0 +1,35 @@
+.condição {
+    a {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    img {
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: 3px;
+        margin-right: 3px;
+        user-select: none;
+    }
+
+    .texto {
+        margin-top: 10px;
+        overflow: hidden;
+        background-color: rgba(59, 18, 2, 0.397);
+        border-radius: 100px / 0px 0px 10px 10px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        padding: 6px 6px 12px 6px;
+
+        p {
+            margin-top: 0px;
+        }
+
+        span {
+            display: block;
+            font-style: italic;
+            font-size: 13px;
+        }
+    }
+}

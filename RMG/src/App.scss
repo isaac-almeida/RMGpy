@@ -1,0 +1,13 @@
+body {
+  background-image: url("./cidade.jpg");
+  background-size: cover;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.tudo {
+  width: 1300px;
+  display: grid;
+  grid-template-columns: 4fr auto;
+}

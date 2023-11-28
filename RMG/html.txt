@@ -1,0 +1,84 @@
+
+   const fichas = [{
+    img: "https://f4.bcbits.com/img/a1221935944_65",
+    nome: "Lidein",
+    titulo: "Extraterrestre 56582-091",
+    pv_max: 9,
+    pv_atual: "000000021",
+    mana_max: 16,
+    mana_atual: 16,
+    mana_nova: 14,
+    fdv_max: 5,
+    fdv_atual: 3,
+    pds: 1.2,
+    conditions: [
+      {
+        nome: "Inspirada",
+        efeito: "Pode encerrar a condição antes de uma rolagem para que ela obtenha qualiadade de praxis.",
+        fonte: "acerto crítico",
+        duracao: "1 cena",
+        img: "https://cdn-icons-png.flaticon.com/512/551/551080.png"
+      }
+    ]
+  }]
+
+
+  function Ficha() {
+    function BarraPv() {
+      const pedacinhos = {
+        0: "saudável",
+        1: "contundente",
+        2: "letal",
+        3: "agravado"
+      }
+      let i = 0
+      const barrinhas = []
+      fichas[0].pv_atual.split("").forEach(valor => {
+        barrinhas.push(<li className={pedacinhos[valor]} key={i}></li>)
+        i = i + 1
+      })
+      return (
+        <div id="barra_pv_inteira"><ul>{barrinhas}</ul></div>
+      )
+    }
+    function BarraMana() {
+      function AlterarMana () {
+        const [mana, mudaMana] = useState(fichas[0].mana_atual)
+        let proporcao_antiga = fichas[0].mana_atual / fichas[0].mana_max
+        let proporcao_nova = fichas[0].mana_nova / fichas[0].mana_max
+        const estilo = {
+          width: proporcao_nova + "%"
+        }
+
+        if (mana != fichas[0].mana_nova) {
+          fichas[0].mana_atual = fichas[0].mana_nova
+          mudaMana(fichas[0].mana_nova)
+        }
+        return (
+          <>
+            <keyframes name="mudaMana" from={{ width: proporcao_antiga }} to={{ width: proporcao_nova}}/>
+            <div style={estilo}></div>
+          </>
+        )
+      }
+
+      return <div id="manabar"><AlterarMana/></div>
+    }
+    return (
+      <>
+          <img src={fichas[0].img} alt={fichas[0].nome + ', ' + fichas[0].titulo} />
+          <h1 id="nome">{fichas[0].nome}</h1>
+          <h2 id="titulo">{fichas[0].titulo}</h2>
+          <div id="pv">
+            <h3>PV: </h3>
+            <BarraPv/>
+          </div>
+          <div id="mana">
+            <h3>MANA: </h3>
+            <BarraMana/>
+          </div>
+
+      </>
+    )
+  }
+   q

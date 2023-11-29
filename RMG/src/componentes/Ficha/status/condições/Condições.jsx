@@ -4,9 +4,9 @@ import Condição from "./condição/Condição"
 const Condições = ({condições}) => {
   let elementos = []
   condições.forEach((cond, i) => {
-    elementos.push(<li key={i}>
-      <Condição condição={cond}/>
-    </li>)
+    elementos.push(
+      <Condição condição={cond} key={i}/>
+    )
   })
   return (
     <div className='condições'>

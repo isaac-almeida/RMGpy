@@ -9,7 +9,7 @@ const Fdv = ({fdvMax, fdvAtual}) => {
       // <li key={i}><label><input type="radio" disabled={true} checked={i >= fdvAtual ? "":true}/></label></li>
       <li key={i}><div style={{
         "background": i >= fdvAtual ? "transparent":'url("./xis.svg")'
-      }}> </div></li>
+      }} onClick={() => {}}></div></li>
     )
   }
 

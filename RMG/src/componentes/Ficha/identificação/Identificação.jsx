@@ -6,7 +6,7 @@ const Identificação = ({id}) => {
     id.nome.split(" ").forEach(palavra => palavra.length > maiorTamanho ? maiorTamanho = palavra.length : {})
     let tamanhoFonte = 180/maiorTamanho
 
-    if (tamanhoFonte > 30) {
+    if (tamanhoFonte < 30) {
       tamanhoFonte = 30
     }
     

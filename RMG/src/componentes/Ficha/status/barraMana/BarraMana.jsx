@@ -4,18 +4,16 @@ import { useState } from "react"
 
 
 function BarraMana ({manaAtual, manaMax}) {
-  const [alvo, animação] = useAnimate()
-  function mostrarMana () {
-    
-  }
 
   const [mana, mudaMana] = useState(manaAtual)
-  function aumentaMana () {
+  function clicaBarra () {
+
     if (mana < manaMax) {
       mudaMana(mana => mana+1)
     }
   }
-  function diminuiMana () {
+  function clicaMana () {
+
     if (mana != manaMax) {
       mudaMana(mana => mana-2)
     }
@@ -27,8 +25,8 @@ function BarraMana ({manaAtual, manaMax}) {
   return (
     <div className="barraMana">
       <h4>MP: </h4>
-      <div className="barra" onClick={aumentaMana} ><div className="mana" style={{width: mana*240/manaMax+"px"}} onClick={diminuiMana}></div></div>
-      <motion.div className="qtde" ref={alvo} initial={{opacity:0}} >{mana}/{manaMax}</motion.div>
+      <div className="barra" onClick={clicaBarra}><div className="mana" style={{width: mana*240/manaMax+"px"}} onClick={clicaMana}></div></div>
+      <motion.div className="qtde" initial={{opacity:0}} >{mana}/{manaMax}</motion.div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ import Identificação from "./identificação/Identificação.jsx"
 const fichas = [{
     identificação: {
       pfp: "https://upload.wikimedia.org/wikipedia/commons/5/57/Emoji_u1f61d.svg",
-      nome: "Fulano Ano Bacano",
+      nome: "Adrino Lipskipskipskipskipskipskipskips",
       titulo: "Maluco de Aluguel",
     },
     status: {

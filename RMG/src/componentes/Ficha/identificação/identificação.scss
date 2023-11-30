@@ -18,12 +18,13 @@
     .profTextContainer {
         margin-top: -5px;
         font-weight: bold;
+        overflow: hidden;
         .nome {
             max-width: 180px; //ligado ao valor da fonte do Nome no componente Identificação
             min-height: 42px;
             margin-top: 5px;
             text-transform: uppercase;
-            
+            text-overflow: ellipsis;
         }
         .titulo {
             max-width: 240px;

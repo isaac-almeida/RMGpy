@@ -30,24 +30,14 @@
             border-radius: 3px 10px 10px 3px;            
             background-color: rgb(8, 86, 112);
             cursor: pointer;
-            transition: width 0.25s ease-in;
+            transition: width 0.25s ease-in, background-color 0.7s;
         }
         .mana:active {
-            animation: diminuiMana 0.5s ease-in-out;
+            background-color: rgb(43, 33, 3);
+            transition: background-color 1s;
         }
     }
     // .barra:active > .mana {
     //     animation: aumentaMana 0.5s ease-in-out;
     // }
-}
-@keyframes diminuiMana{
-    0%{
-        background-color: rgb(8, 86, 112);
-    }
-    50% {
-        background-color: rgb(109, 87, 16);
-    }
-    100%{
-        background-color: rgb(8, 86, 112);
-    }
 }

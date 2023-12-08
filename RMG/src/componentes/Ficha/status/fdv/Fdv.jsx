@@ -1,15 +1,18 @@
 import "./fdv.scss"
 
 const Fdv = ({fdvMax, fdvAtual}) => {
-
-
+  function mudaBotao (evento) {
+    evento.target.style.opacity = -evento.target.style.opacity;
+    fdvAtual += parseInt(evento.target.style.opacity);
+    console.log(fdvAtual)
+  }
+  
   const pontos = []
   for(let i = 0; i < fdvMax; i++) {
     pontos.push(
-      // <li key={i}><label><input type="radio" disabled={true} checked={i >= fdvAtual ? "":true}/></label></li>
-      <li key={i}><div style={{
-        "background": i >= fdvAtual ? "transparent":'url("./xis.svg")'
-      }} onClick={() => {}}></div></li>
+      <li key={i}>
+        <img src="./xis.svg" style={{opacity: i >= fdvAtual ? -1 : 1}} onClick={(evento) => {mudaBotao(evento)}}/>
+      </li>
     )
   }
 

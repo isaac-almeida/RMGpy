@@ -2,8 +2,9 @@ import { motion } from "framer-motion"
 import "./ficha.scss"
 import Status from "./status/Status.jsx"
 import Identificação from "./identificação/Identificação.jsx"
+import Atributos from "./atributos/Atributos.jsx"
 
-const fichas = [{
+const ficha = {
     identificação: {
       pfp: "https://upload.wikimedia.org/wikipedia/commons/5/57/Emoji_u1f61d.svg",
       nome: "Adrino Lipskipskipskipskipskipskipskips",
@@ -34,15 +35,30 @@ const fichas = [{
           img: "./jabuticaba.png"
         }
       ],
+    },
+    atributos: {
+      inteligência: 2,
+      força: 3,
+      presença: 4,
+
+      raciocínio: 3,
+      destreza: 2,
+      manipulação: 1,
+
+      perseverança: 4,
+      vigor: 2,
+      autocontrole: 1
     }
-  }]
+  }
 
 function Ficha () {
   return (
     <div className="wrapper">
       <div className="ficha">
-        <Identificação id={fichas[0].identificação}/>
-        <Status status={fichas[0].status}/>
+        <Identificação id={ficha.identificação}/>
+        <Status status={ficha.status}/>
+        <Atributos atributos={ficha.atributos} />
+        <Habilidades habilidades={fi}
       </div>
     </div>
 )

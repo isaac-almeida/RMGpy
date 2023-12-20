@@ -14,6 +14,7 @@
     }
 
     .texto {
+        user-select: text;
         margin-top: 10px;
         overflow: hidden;
         background-color: rgba(59, 18, 2, 0.397);
@@ -30,6 +31,12 @@
             font-style: italic;
             font-size: 13px;
         }
+    }
+
+    ::selection {
+        color:rgba(255, 255, 255, 0.397);
+        background-color: rgba(2, 59, 2, 0.397);
+        text-shadow: none;
     }
 }
 

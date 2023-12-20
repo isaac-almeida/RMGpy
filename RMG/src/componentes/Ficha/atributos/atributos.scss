@@ -1,0 +1,51 @@
+.atributos {
+    margin-left: -16px;
+    ul {
+        list-style-type: '> ';
+        .titulo {
+            cursor: pointer;
+        }
+    }
+    .rappi {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 0px;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
+        .atributo {
+            margin-left: 5px;
+            margin-bottom: -8px;
+            float:left;
+            clear: both;
+            user-select: none;
+            
+            p {
+                font-size: 12px;
+                float: left;
+            }
+            ul {
+                display: flex;
+                list-style-type: none;
+                position: relative;
+                left: -33px;
+                top: 11px;
+                cursor:default;
+                li {
+                    height: 11px;
+                    width: 11px;
+                    border-radius: 50%;
+                    display: block;
+                    border: 2px solid #403418;
+                    box-shadow: 1px 1px 2px #61480e;
+                    
+                    img {
+                        position: relative;
+                        bottom: 3px;
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

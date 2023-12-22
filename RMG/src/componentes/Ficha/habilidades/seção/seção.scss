@@ -1,0 +1,59 @@
+.seção {
+    padding-top: 4px;
+    transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
+    list-style-type: none;
+    .atributo {
+        margin-left: 5px;
+        margin-bottom: -10px;
+        float:left;
+        clear: both;
+        user-select: none;
+        
+        p {
+            font-size: 12px;
+            float: left;
+            position: relative;
+            bottom: 7px;
+        }
+        ul {
+            position: relative;
+            top: 5px;
+            right: 33px;
+            display: flex;
+            list-style-type: none;
+            li {
+                height: 9px;
+                width: 9px;
+                border-radius: 50%;
+                display: block;
+                border: 2px solid #403418;
+                box-shadow: 1px 1px 2px #61480e;
+                
+                img {
+                    position: relative;
+                    bottom: 4px;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+    .titulo {
+        list-style-type: '> ';
+    }
+    .container_skills {
+        margin-left: -30px;
+        list-style-type: none;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
+    }
+}
+
+.seção:first-child {
+    position: relative;
+    left: -40px;
+}
+
+.aberto::marker {
+    font-weight: 300;
+}

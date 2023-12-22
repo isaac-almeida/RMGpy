@@ -1,0 +1,15 @@
+.habilidades {
+    margin-left: -16px;
+    .wrap_habilidades{
+        list-style-type: '> ';
+        .titulo {
+            cursor: pointer;
+        }
+        .container_seções {
+            list-style-type: none;
+            transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
+            overflow: hidden;
+            padding-left: 15px;
+        }
+    }
+}

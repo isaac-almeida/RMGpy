@@ -1,4 +1,4 @@
-.atributos {
+.arcanas {
     margin-left: -16px;
     ul {
         list-style-type: '> ';
@@ -6,13 +6,13 @@
             cursor: pointer;
         }
     }
-    .container_atributos {
+    .container_arcanas {
         list-style-type: none;
         padding: 0;
         margin-top: 0px;
         overflow: hidden;
         transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
-        .atributo {
+        .arcana {
             margin-left: 5px;
             margin-bottom: -8px;
             float:left;

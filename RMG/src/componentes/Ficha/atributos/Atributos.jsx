@@ -1,11 +1,10 @@
 import "./atributos.scss"
 import { useState } from "react"
 
-const Atributos = (atributos) => {
+const Atributos = ({atributos}) => {
   const [abertura, mudarAbertura] = useState(false)
-
-  atributos = atributos.atributos
   let componentes = []
+  
   for (let i = 0; i < 9; i++) {
     const atributo = Object.keys(atributos)[i]
     const pontos = []
@@ -33,14 +32,14 @@ const Atributos = (atributos) => {
     <div className='atributos'>
       <ul>
         <li className={abertura ? "titulo aberto" : "titulo fechado"} onClick={() => {mudarAbertura(a => !a)}}>Atributos</li>
-          <ul className="rappi" id="atributos" style={{
-            maxHeight: abertura ? "350px" : 0,
-            paddingTop: abertura ? "6px" : 0,
-            paddingBottom: abertura ? "12px" : 0,
-            transitionDelay: abertura ? "0s, 0s" : "0s, 0s"
-          }}>
-            {componentes}
-          </ul>
+        <ul className="container_atributos" style={{
+          maxHeight: abertura ? "350px" : 0,
+          paddingTop: abertura ? "6px" : 0,
+          paddingBottom: abertura ? "12px" : 0,
+          transitionDelay: abertura ? "0s, 0s" : "0s, 0s"
+        }}>
+          {componentes}
+        </ul>
       </ul>
     </div>
   )

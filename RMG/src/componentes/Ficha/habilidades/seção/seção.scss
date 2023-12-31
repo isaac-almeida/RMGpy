@@ -2,6 +2,9 @@
     padding-top: 4px;
     transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
     list-style-type: none;
+    position: relative;
+    left: -30px;
+    top: -5px;
     .atributo {
         margin-left: 5px;
         margin-bottom: -10px;
@@ -47,11 +50,6 @@
         overflow: hidden;
         transition: max-height 0.8s ease-in-out,padding-top 0.6s ease-in-out, padding-bottom 0.8s ease-in-out;
     }
-}
-
-.seção:first-child {
-    position: relative;
-    left: -40px;
 }
 
 .aberto::marker {

@@ -5,6 +5,7 @@ import Identificação from "./identificação/Identificação.jsx"
 import Atributos from "./atributos/Atributos.jsx"
 import Habilidades from "./habilidades/habilidades.jsx"
 import Arcanas from "./arcanas/Arcanas.jsx"
+import Feitiços from "./feitiços/Feitiços.jsx"
 
 const ficha = {
     identificação: {
@@ -86,6 +87,7 @@ const ficha = {
       }
     },
     arcanas: {
+      gnose: 3,
       espaço: 5,
       espírito: 1,
       forças: 3,
@@ -96,6 +98,106 @@ const ficha = {
       sorte: 0,
       tempo: 2,
       vida: 0
+    },
+    feitiços: {
+      "Postcognition": {
+        arcana: "tempo",
+        nível: 1,
+        fator: "potência",
+        especialidade: "praxis",
+        skill: false
+      },
+      "Correspondence": {
+        arcana: "espaço",
+        nível: 1,
+        fator: "potência",
+        especialidade: "praxis",
+        skill: false
+      },
+      "Veil Sympathy": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      },
+      "Veil Sympathy2": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension2": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      },
+      "Veil Sympathy3": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension3": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      },
+      "Veil Sympathy4": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension4": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      },
+      "Veil Sympathy5": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension5": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      },
+      "Veil Sympathy6": {
+        arcana: "espaço",
+        nível: 2,
+        fator: "duração",
+        especialidade: "clássico",
+        skill: "política"
+      },
+      "Pocket Dimension6": {
+        arcana: "espaço",
+        nível: 4,
+        fator: "duração",
+        especialidade: false,
+        skill: false,
+      }
     }
   }
 
@@ -108,6 +210,7 @@ function Ficha () {
         <Atributos atributos={ficha.atributos} />
         <Habilidades habilidades={ficha.habilidades} />
         <Arcanas arcanas={ficha.arcanas} />
+        <Feitiços habilidades={ficha.habilidades} arcanas={ficha.arcanas} feitiços={ficha.feitiços} />
       </div>
     </div>
 )

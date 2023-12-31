@@ -6,7 +6,7 @@ const Arcanas = ({arcanas}) => {
   let componentes = []
   let n = 0
   
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i <= 10; i++) {
     const arcana = Object.keys(arcanas)[i]
     if (arcanas[arcana] != 0) {
       n++

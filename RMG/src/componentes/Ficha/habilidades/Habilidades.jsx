@@ -9,8 +9,7 @@ const Habilidades = ({habilidades}) => {
     for (let seção = 0; seção < 3; seção++) {
         const nomeSeção = Object.keys(habilidades)[seção]
         seções.push(
-            <li key={seção}>
-
+            <li key={seção} className="seção">
                 <Seção skills={habilidades[nomeSeção]} nomeSeção={nomeSeção}/>
             </li>
         )

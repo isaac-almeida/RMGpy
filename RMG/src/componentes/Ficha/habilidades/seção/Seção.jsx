@@ -1,7 +1,7 @@
 import './seção.scss'
 import { useState } from 'react'
 
-const Sessão = ({skills, nomeSeção}) => {
+const Seção = ({skills, nomeSeção}) => {
   const [abertura, mudarAbertura] = useState(false)
   const componentes = []
   let n = 0
@@ -30,7 +30,6 @@ const Sessão = ({skills, nomeSeção}) => {
   const tamanhoSeção = `${n*25}px`
 
   return (
-    <li className="seção" key={nomeSeção}>
       <ul>
         <li className={abertura ? "titulo aberto" : "titulo fechado"} onClick={() => {mudarAbertura(a => !a)}}>{nomeSeção.charAt(0).toUpperCase() + nomeSeção.slice(1)}</li>
         <ul className="container_skills" style={{
@@ -42,8 +41,7 @@ const Sessão = ({skills, nomeSeção}) => {
           {componentes}
         </ul>
       </ul>
-    </li>
   )
 }
 
-export default Sessão
+export default Seção

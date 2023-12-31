@@ -119,10 +119,12 @@ const Conjuração = ({nomeFeitiço, detalhesFeitiço, determinantes}) => {
     aumenta: () => {
       mudaAlcance(a => a+1)
       mudaReach(a => a+1)
+      mudaLim(a => a+1)
     },
     diminui: () => {
       mudaAlcance(a => a-1)
       mudaReach(a => a-1)
+      mudaLim(a => a-1)
     },
     valor: alcance
   }

@@ -17,8 +17,6 @@ const Feitiços = ({habilidades, arcanas, feitiços}) => {
         mudarFeitiço(nomeFeitiço)
         detalhesFeitiço = Object.assign({}, feitiços[atual])
         detalhesFeitiço.especialidade = tipo
-
-        determinantes.skill = habilidades[detalhesFeitiço.skill]
         determinantes.nívelArcana = arcanas[detalhesFeitiço.arcana]
     }
     
@@ -33,9 +31,7 @@ const Feitiços = ({habilidades, arcanas, feitiços}) => {
     return (
         <div className='feitiços'>
             <Conjuração nomeFeitiço={atual} detalhesFeitiço={detalhesFeitiço} determinantes={determinantes}/>
-            <table className='tabelaFeitiços' style={{
-                // maxHeight: 27*(componentes.length-1)+"px"
-            }}>
+            <table className='tabelaFeitiços'>
                 {componentes}
             </table>
         </div>

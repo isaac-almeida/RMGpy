@@ -9,11 +9,13 @@ const Feitiço = ({nomeFeitiço, tipo, select}) => {
         <td className="selecionar"><div><img src="d10.png" onClick={(a) => {
           a.target.style.cssText = `
             transform: rotate(1turn);
+            transition: transform 1s
           `
           select(nomeFeitiço, T)
           setTimeout(() => {
             a.target.style.cssText = `
             transform: none;
+            transition: none
           `
           }, "1000");
           }} /></div></td>
